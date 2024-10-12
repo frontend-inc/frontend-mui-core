@@ -1,6 +1,6 @@
+import React from 'react'
 import { Button } from '../../shadcn/ui/button'
 import NextLink from 'next/link'
-import { ButtonProps } from '../../shadcn/ui/button'
 import { LinkProps } from 'next/link'
 import { ReactNode, MouseEvent } from 'react'
 

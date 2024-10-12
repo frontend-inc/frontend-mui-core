@@ -31,8 +31,7 @@ const AdminMediaShow: React.FC<AdminMediaShowProps> = (props) => {
 			mode="editor"
 			open={open}
 			handleClose={handleClose}
-			maxWidth="md"
-			disablePadding
+			maxWidth="md"			
 			buttons={
 				<>
 					<Button

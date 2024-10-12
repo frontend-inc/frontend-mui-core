@@ -7,13 +7,14 @@ interface SwitchProps {
 	value?: string | number | readonly string[]
 	handleChange?: (checked: boolean) => void
 	label?: string
+  id?: string
 	className?: string
 }
 
 const Switch = React.forwardRef<
 	React.ElementRef<typeof SwitchPrimitives.Root>,
 	SwitchProps
->(({ className, name, value, handleChange, label, ...props }, ref) => (
+>(({ id, className, name, value, handleChange, label, ...props }, ref) => (
 	<div className="flex items-center">
 		<SwitchPrimitives.Root
 			className={cn(
@@ -34,7 +35,7 @@ const Switch = React.forwardRef<
 		</SwitchPrimitives.Root>
 		{label && (
 			<label
-				htmlFor={props.id}
+				htmlFor={id}
 				className="ml-2 text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
 			>
 				{label}

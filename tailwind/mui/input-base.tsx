@@ -5,8 +5,6 @@ export interface InputBaseProps
 	extends React.InputHTMLAttributes<HTMLInputElement> {
 	startAdornment?: React.ReactNode
 	endAdornment?: React.ReactNode
-	multiline?: boolean
-	rows?: number
 	fullWidth?: boolean
 }
 
@@ -17,8 +15,6 @@ const InputBase = forwardRef<HTMLInputElement, InputBaseProps>(
 			type = 'text',
 			startAdornment,
 			endAdornment,
-			multiline = false,
-			rows = 1,
 			fullWidth = false,
 			...props
 		},
@@ -38,8 +34,6 @@ const InputBase = forwardRef<HTMLInputElement, InputBaseProps>(
 			className
 		)
 
-		const InputComponent = multiline ? ('textarea' as 'input') : 'input'
-
 		return (
 			<div
 				className={cn(
@@ -52,11 +46,10 @@ const InputBase = forwardRef<HTMLInputElement, InputBaseProps>(
 						{startAdornment}
 					</div>
 				)}
-				<InputComponent
+				<input
 					type={type}
 					className={inputClasses}
 					ref={ref as any}
-					rows={multiline ? rows : undefined}
 					{...props}
 				/>
 				{endAdornment && (

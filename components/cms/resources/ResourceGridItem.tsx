@@ -21,7 +21,7 @@ import Image from 'next/image'
 export type ResourceGridItemProps = {
 	selectable?: boolean
 	selected?: boolean
-	primary: React.ReactNode
+	primary?: React.ReactNode
 	secondary?: React.ReactNode
 	avatar?: React.ReactNode
 	icon?: string

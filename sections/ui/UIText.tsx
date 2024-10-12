@@ -1,13 +1,14 @@
 import React from 'react'
 import { Section } from '../../components'
 import { Typography } from '../../tailwind'
-import { TextProps } from '../../components/ui/typography/Text'
 import { SectionProps, HeadingProps } from '../../types'
 
-type UITextProps = SectionProps & HeadingProps & TextProps
+type UITextProps = SectionProps & HeadingProps & { 
+  text?: string
+}
 
 const UIText: React.FC<UITextProps> = (props) => {
-	const { bgColor, mode, py, px, maxWidth, requireAuth, requirePaid, ...rest } =
+	const { bgColor, mode, py, px, maxWidth, requireAuth, requirePaid, text, ...rest } =
 		props
 
 	return (
@@ -20,7 +21,9 @@ const UIText: React.FC<UITextProps> = (props) => {
 			px={px}
 			maxWidth={maxWidth}
 		>
-			<Typography variant="body1" {...rest} />
+			<Typography variant="body1">
+        { text }
+      </Typography>
 		</Section>
 	)
 }

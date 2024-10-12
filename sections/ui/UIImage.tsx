@@ -1,10 +1,10 @@
 import React from 'react'
 import { Section } from '../../components'
 import { Image } from '../../components'
-import { ImageProps } from '../../components/ui/images/Image'
+import { ResponsiveImageProps } from '../../components/ui/images/Image'
 import { SectionProps } from '../../types'
 
-type UIImageProps = SectionProps & ImageProps
+type UIImageProps = SectionProps & ResponsiveImageProps
 
 const UIImage: React.FC<UIImageProps> = (props) => {
 	const { bgColor, mode, py, px, maxWidth, requireAuth, requirePaid, ...rest } =

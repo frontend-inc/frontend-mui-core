@@ -6,7 +6,7 @@ import { AspectRatio } from '../../../shadcn/ui/aspect-ratio'
 import { Badge } from '../../../shadcn/ui/badge'
 import { cn } from '../../../shadcn/lib/utils'
 
-interface ResponsiveImageProps {
+export interface ResponsiveImageProps {
 	src: string
 	alt: string
 	width?: number

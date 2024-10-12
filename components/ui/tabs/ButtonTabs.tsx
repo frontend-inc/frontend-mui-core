@@ -4,7 +4,7 @@ import { Icon } from '../../../components'
 import { cn } from '../../../shadcn/lib/utils'
 
 type ButtonTabsProps = {
-	handleChange: (value: string) => void
+	handleChange: (value: number | string) => void
 	options: {
 		icon?: string
 		label?: string
