@@ -36,11 +36,7 @@ export default function TabsInput({
 
 	return (
 		<div
-			className={cn(
-				'flex',
-				'flex-row items-center',
-				'justify-between w-full space-y-1'
-			)}
+			className={'flex flex-row items-center justify-between w-full space-y-1'}
 		>
 			<InputLabel label={label} info={info} />
 			<Tabs

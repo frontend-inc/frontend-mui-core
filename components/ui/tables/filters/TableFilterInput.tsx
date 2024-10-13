@@ -62,7 +62,7 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 			<Separator />
 			<div className="flex flex-row justify-start items-start">
 				<div>
-					<TabsInput
+					<TabsInput            
 						name="where"
             //@ts-ignore
 						options={WHERE_OPTIONS}
