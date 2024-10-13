@@ -50,7 +50,6 @@ export default function ResourceListItem({
 	sortable,
 	selectable,
 	selected,
-	isDragging = false,
 	enableBorder = true,
 }: ResourceListItemProps) {
 	return (
@@ -85,8 +84,8 @@ export default function ResourceListItem({
 						className="focus:outline-none focus:ring-2"
 						onClick={handleClick}
 					>
-						<Avatar className={cn('mr-2 rounded', color)}>
-							<AvatarFallback>
+						<Avatar className='mr-2 rounded'>
+							<AvatarFallback className={color}>
 								<Icon name={icon} />
 							</AvatarFallback>
 						</Avatar>
