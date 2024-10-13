@@ -11,7 +11,7 @@ type AdminTabIconsProps = {
 	logo?: string
 	menuItems: any[]
 	handleClick: (item: any) => void
-	secondaryActions?: React.ReactNode
+	secondaryAction?: React.ReactNode
 }
 
 export default function AdminTabIcons({

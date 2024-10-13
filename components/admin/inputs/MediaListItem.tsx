@@ -14,7 +14,7 @@ import {
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from '@/shadcn/ui/dropdown-menu'
+} from '../../../shadcn/ui/dropdown-menu'
 import { MoreHorizontal } from 'lucide-react'
 import { cn } from '../../../shadcn/lib/utils'
 

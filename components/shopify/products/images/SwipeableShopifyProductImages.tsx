@@ -22,6 +22,7 @@ export default function SwipeableShopifyProductImages({
 	disableBorderRadius = false,
 }: SwipeableShopifyProductImagesProps) {
 	const [activeStep, setActiveStep] = useState(0)
+  // @ts-ignore
 	const maxSteps = product?.images?.edges?.length || 0
 
 	const handleStepChange = (step: number) => {

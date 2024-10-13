@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AppContext } from '../../../context'
 import { useAuth } from 'frontend-js'
 import { Icon, Modal, MyAccountForm } from '../../../components'
@@ -54,7 +54,6 @@ const MyAccountModal: React.FC<MyAccountModalProps> = (props) => {
 
 	return (
 		<Modal
-			disablePadding
 			open={myAccountOpen}
 			handleClose={() => setMyAccountOpen(false)}
 			title={

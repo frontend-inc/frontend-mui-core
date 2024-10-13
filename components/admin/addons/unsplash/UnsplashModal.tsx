@@ -106,6 +106,7 @@ const UnsplashModal: React.FC<UnsplashViewerModalProps> = ({
 							<div className="flex items-center">
 								<IconButton onClick={handleUserClick} className="mr-3">
 									<Avatar
+                    // @ts-ignore
 										src={image?.user?.profile_image?.large}
 										alt={image?.user?.name}
 									/>

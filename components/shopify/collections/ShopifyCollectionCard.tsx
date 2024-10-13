@@ -49,8 +49,7 @@ export default function ShopifyCollectionCard({
 				<Image
           // @ts-ignore
 					src={image?.url}
-					alt={title || 'Collection image'}
-					layout="fill"
+					alt={title || 'Collection image'}					
 					label={label}
 					aspectRatio={1.0}
 					objectFit="cover"

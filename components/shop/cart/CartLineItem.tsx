@@ -104,7 +104,7 @@ const CartLineItem: React.FC<CartLineItemProps> = (props) => {
 						height={96}
 						width={96}
 						aspectRatio={1.0}
-						onClick={handleClick}
+						handleClick={handleClick}
 						className="cursor-pointer"
 					/>
 				</div>

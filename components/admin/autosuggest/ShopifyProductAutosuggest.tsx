@@ -10,14 +10,12 @@ type AutosuggestProps = {
 	placeholder?: string
 	handleChange: (e: SyntheticEventType) => void
 	enableDelete?: boolean
-	direction?: 'row' | 'column'
 }
 
 const ShopifyProductAutosuggest: React.FC<AutosuggestProps> = (props) => {
 	const {
 		value,
 		label,
-		direction = 'column',
 		placeholder,
 		name = 'shopify_handle',
 		handleChange,
@@ -56,7 +54,6 @@ const ShopifyProductAutosuggest: React.FC<AutosuggestProps> = (props) => {
 			value={value}
 			options={options}
 			placeholder={placeholder}
-			direction={direction}
 			handleChange={handleChange}
 			handleInputChange={handleInputChange}
 			enableClear

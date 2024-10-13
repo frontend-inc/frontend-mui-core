@@ -13,9 +13,7 @@ const DisplayMetafield: React.FC<DisplayMetafieldProps> = (props) => {
 
 	return (
 		<AccordionItem
-			disablePadding={disablePadding}
-			primary={field.label}
-			startIcon={field.icon}
+			primary={field.label}			
 			secondary={<Field disableLabel field={field} resource={resource} />}
 		/>
 	)

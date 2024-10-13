@@ -43,7 +43,6 @@ const VideoModal: React.FC<VideoModalProps> = (props) => {
 	return (
 		<div className="dark">
 			<Modal
-				fullScreen
 				open={open}
 				handleClose={handleClose}
 				maxWidth="md"

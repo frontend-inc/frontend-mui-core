@@ -29,6 +29,7 @@ type AutosuggestProps = {
 	handleChange: (ev: SyntheticEventType) => void
 	handleInputChange?: (value: string) => void
 	options: OptionType[]
+  enableClear?: boolean
 }
 
 const Autosuggest: React.FC<AutosuggestProps> = (props) => {

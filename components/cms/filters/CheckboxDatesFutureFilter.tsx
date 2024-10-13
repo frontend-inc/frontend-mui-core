@@ -6,7 +6,7 @@ import { MenuList } from '../..'
 type CheckboxDatesFutureFilterProps = {
 	field: string
 	handleClick: (filter: FilterOptionType) => void
-	label?: string
+	label: string
 	values?: string[]
 	disablePadding?: boolean
 }
@@ -25,7 +25,7 @@ const CheckboxDatesFutureFilter: React.FC<CheckboxDatesFutureFilterProps> = (
 	]
 
 	return (
-		<MenuList label={label} disablePadding={disablePadding}>
+		<MenuList label={label}>
 			{OPTIONS?.map((option, index) => (
 				<CheckboxFilterItem
 					key={index}
