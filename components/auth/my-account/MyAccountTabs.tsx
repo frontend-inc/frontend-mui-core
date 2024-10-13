@@ -1,8 +1,8 @@
 import React from 'react'
 import { useApp } from '../../../hooks'
-import { Icon, UserAvatar } from '../..'
+import { UserAvatar } from '../..'
 import { useAuth } from 'frontend-js'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import { ChevronRight } from 'lucide-react'
 
 type MyAccountTabsProps = {

@@ -10,8 +10,6 @@ import {
 	Table,
 	TableHeader,
 	TableBody,
-	TableCell as ShadcnTableCell,
-	TableRow as ShadcnTableRow,
 } from '../../../shadcn/ui/table'
 import { cn } from '../../../shadcn/lib/utils'
 

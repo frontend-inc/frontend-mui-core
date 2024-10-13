@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CheckboxFilterItem from './CheckboxFilterItem'
 import { FilterOptionType } from '../../../types'
 import { MenuList } from '../..'
@@ -6,7 +6,7 @@ import { MenuList } from '../..'
 type CheckboxDatesPastFilterProps = {
 	field: string
 	handleClick: (filter: FilterOptionType) => void
-	label?: string
+	label: string
 	values?: string[]
 	disablePadding?: boolean
 }
@@ -26,7 +26,7 @@ const CheckboxDatesPastFilter: React.FC<CheckboxDatesPastFilterProps> = (
 	]
 
 	return (
-		<MenuList label={label} disablePadding={disablePadding}>
+		<MenuList label={label}>
 			{OPTIONS?.map((option, index) => (
 				<CheckboxFilterItem
 					key={index}

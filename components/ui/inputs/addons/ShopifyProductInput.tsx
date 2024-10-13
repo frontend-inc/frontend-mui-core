@@ -86,7 +86,7 @@ const ShopifyProductInput: React.FC<AutosuggestProps> = (props) => {
 
 	return (
 		<div className={cn('flex flex-col space-y-4', className)}>
-			<Collapse open={!!product?.id}>
+			<Collapse in={!!product?.id}>
 				<div className="w-[180px] h-[180px] rounded overflow-hidden transition-shadow duration-300 hover:shadow-md">
 					<Image
 						enableGradient

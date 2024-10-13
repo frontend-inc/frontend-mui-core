@@ -1,7 +1,7 @@
 import React from 'react'
 import { useAuth } from 'frontend-js'
 import { UserAvatar, Icon } from '../../../components'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -10,7 +10,7 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from '@/shadcn/ui/dropdown-menu'
+} from '../../../shadcn/ui/dropdown-menu'
 
 type AuthMenuProps = {
 	open: boolean

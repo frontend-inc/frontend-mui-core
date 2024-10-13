@@ -33,7 +33,6 @@ const ImageModal: React.FC<ImageModalProps> = (props) => {
 			handleClose={handleClose}
 			title={title}
 			maxWidth="md"
-			disablePadding
 			buttons={
 				<>
 					<Button

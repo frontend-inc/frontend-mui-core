@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CheckboxRatingsFilterItem from './CheckboxRatingsFilterItem'
 import {
 	FilterOperatorType,
@@ -15,8 +15,6 @@ type CheckboxFilterProps = {
 	handleClick: (filter: FilterOptionType) => void
 	label: string
 	icon?: React.ReactNode
-	disablePadding?: boolean
-	defaultClosed?: boolean
 }
 
 const CheckboxFilter: React.FC<CheckboxFilterProps> = (props) => {

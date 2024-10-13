@@ -2,9 +2,23 @@ import React from 'react'
 import { cn } from '../../../shadcn/lib/utils'
 import { Image, TouchableOpacity } from '../..'
 import { Typography } from '../../../tailwind'
-import { CardProps } from './Card'
 
-const CoverCard: React.FC<CardProps> = (props) => {
+type CoverCardProps = {
+  label?: string
+  primary?: string
+  secondary?: string
+  actions?: React.ReactNode
+  secondaryAction?: React.ReactNode
+  handleClick: () => void
+  image: string
+  height?: number
+  slots?: {
+    item?: any
+    image?: any
+  }
+}
+
+const CoverCard: React.FC<CoverCardProps> = (props) => {
 	const {
 		label,
 		primary,

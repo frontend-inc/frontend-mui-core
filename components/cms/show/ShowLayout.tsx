@@ -32,8 +32,7 @@ const ShowLayout: React.FC<ShowLayoutProps> = (props) => {
 			{buttons && (
 				<div className="w-full sm:w-auto flex justify-center">
 					<ButtonActions
-						buttons={buttons}
-						resource={resource}
+						buttons={buttons}						
 						justifyContent="center"
 					/>
 				</div>

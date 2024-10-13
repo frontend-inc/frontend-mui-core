@@ -27,6 +27,7 @@ const DataTableList: React.FC<DataTableListProps> = (props) => {
 		perPage,
 		numPages,
 		totalCount,
+    selectAll,
 	} = useResourceContext()
 
 	const { headers, href, enableShow = false } = props || {}
@@ -66,7 +67,7 @@ const DataTableList: React.FC<DataTableListProps> = (props) => {
 	return (
 		<div className="flex flex-col space-y-2">
 			<div className={cn(loading && 'opacity-50')}>
-				<TableList
+				<TableList          
 					handleClick={handleCellClick}
 					enableShow={enableShow}
 					handleShow={handleClick}
@@ -80,6 +81,7 @@ const DataTableList: React.FC<DataTableListProps> = (props) => {
 					numPages={numPages}
 					totalCount={totalCount}
 					handlePaginate={handlePaginate}
+          handleSelectAll={selectAll}
 				/>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { TextInput } from '../../../components'
+import { TextArea } from '../../../components'
 
 // Optional but recommended: use the Edge Runtime. This can only be done at the page level, not inside nested components.
 //export const runtime = 'edge';
@@ -32,8 +32,7 @@ const AiChatForm: React.FC<AiChatFormProps> = (props) => {
 	}, [prompt])
 
 	return (
-		<TextInput
-			multiline
+		<TextArea
 			label={label}
 			name="prompt"
 			placeholder="Enter text..."

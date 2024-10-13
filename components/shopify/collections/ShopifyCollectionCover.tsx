@@ -29,7 +29,6 @@ const ShopifyCollectionCover: React.FC<ShopifyCollectionCoverProps> = (
 		enableOverlay = false,
 		opacity = 0.5,
 		alignItems = 'center',
-		overlayColor = '#000000',
 		href,
 		buttonText,
 	} = props
@@ -40,9 +39,9 @@ const ShopifyCollectionCover: React.FC<ShopifyCollectionCoverProps> = (
 			enableOverlay={enableOverlay}
 			enableGradient={enableGradient}
 			opacity={opacity}
-			overlayColor={overlayColor}
 			height={height}
 			title={shopifyCollection?.title}
+      // @ts-ignore
 			image={shopifyCollection?.image?.url}
 			alt={alt}
 			alignItems={alignItems}

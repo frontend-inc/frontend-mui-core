@@ -2,7 +2,6 @@ import React from 'react'
 import { LoadMore, DataLayout } from '../..'
 import { useResourceContext } from 'frontend-js'
 import { ImageCard } from '../..'
-import { useCollectionForms } from '../../../hooks'
 
 export type ImageListItemsProps = {
 	url: string

@@ -103,7 +103,6 @@ const ProductDetails: React.FC<ProductProps> = (props) => {
 					<ButtonActions
 						justifyContent={'end'}
 						buttons={buttons}
-						resource={product}
 					/>
 				)
 			}

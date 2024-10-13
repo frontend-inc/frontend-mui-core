@@ -1,11 +1,11 @@
 import React from 'react'
-import { Stack } from '../../../tailwind'
 import { Carousel } from '../..'
 import { useApp } from '../../../hooks'
 import { useRouter } from 'next/router'
 import CollectionListItem from './CollectionListItem'
 import { CollectionListItemsProps } from '../collections/CollectionListItems'
 import { useResourceContext } from 'frontend-js'
+import { cn } from '../../../shadcn/lib/utils'
 
 export type CarouselListItemsProps = CollectionListItemsProps & {
 	enableAutoPlay?: boolean

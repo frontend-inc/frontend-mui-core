@@ -5,7 +5,7 @@ import { Hidden } from '../../../tailwind'
 import { FilterOptionType, SearchFilterOptionType } from '../../..'
 import { Button } from '../../../shadcn/ui/button'
 import { Badge } from '../../../shadcn/ui/badge'
-import { Popover, PopoverContent, PopoverTrigger } from '@/shadcn/ui/popover'
+import { Popover, PopoverContent, PopoverTrigger } from '../../../shadcn/ui/popover'
 
 export type FilterButtonProps = {
 	filters?: FilterOptionType[]

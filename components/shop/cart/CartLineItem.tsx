@@ -99,6 +99,7 @@ const CartLineItem: React.FC<CartLineItemProps> = (props) => {
 					</span>
 					<Image
 						alt={product?.title || ''}
+            // @ts-ignore
 						src={product?.image?.url}
 						height={96}
 						width={96}

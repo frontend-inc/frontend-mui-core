@@ -61,7 +61,6 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 		}
 	)
 
-	const [option, setOption] = useState<OptionType>()
 	const [options, setOptions] = useState<OptionType[]>([])
 
 	const handleInputChange = (newValue) => {
@@ -123,8 +122,6 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 	if (!displayField) return null
 	return (
 		<Autosuggest
-			loading={delayedLoading}
-			direction={direction}
 			label={label}
 			name={name}
 			value={value}

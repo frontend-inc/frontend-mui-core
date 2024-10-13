@@ -64,8 +64,11 @@ const ShopifyCartLine: React.FC<ShopifyCartLineProps> = ({ line }) => {
 
 	const {
 		product,
+    // @ts-ignore
 		price: { amount },
+    // @ts-ignore
 		compareAtPrice: compareAtAmount,
+    // @ts-ignore
 		image: { url },
 	} = merchandise || {}
 
@@ -101,9 +104,12 @@ const ShopifyCartLine: React.FC<ShopifyCartLineProps> = ({ line }) => {
 	}
 
 	useEffect(() => {
+    // @ts-ignore
 		if (sellingPlanAllocation?.priceAdjustments?.length > 0) {
+      // @ts-ignore
 			setPrice(sellingPlanAllocation.priceAdjustments[0].price.amount)
 			setCompareAtPrice(
+        // @ts-ignore
 				sellingPlanAllocation.priceAdjustments[0].compareAtPrice.amount
 			)
 		} else {

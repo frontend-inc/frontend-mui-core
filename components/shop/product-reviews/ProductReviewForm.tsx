@@ -69,14 +69,14 @@ const ProductReviewForm: React.FC<ProductReviewFormProps> = () => {
 							errors={errors}
 							name="rating"
 							value={resource?.rating}
-              {/* @ts-ignore */}
+              /* @ts-ignore */
 							handleChange={handleChange}
 						/>
 						<TextInput
 							errors={errors}
 							name="title"
-							value={resource?.title}
-              {/* @ts-ignore */}
+							value={resource?.title}              
+              /* @ts-ignore */
 							handleChange={handleChange}
 							placeholder="Review summary..."
 						/>
@@ -84,7 +84,7 @@ const ProductReviewForm: React.FC<ProductReviewFormProps> = () => {
 							errors={errors}
 							name="body"
 							value={resource?.body}
-              {/* @ts-ignore */}
+              /* @ts-ignore */
 							handleChange={handleChange}
 							placeholder="Leave a review..."
 						/>

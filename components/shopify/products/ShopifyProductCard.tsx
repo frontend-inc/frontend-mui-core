@@ -4,7 +4,7 @@ import { truncate } from '../../../helpers'
 import { ShopifyProductType } from 'frontend-shopify'
 import { ShopifyContext } from 'frontend-shopify'
 import { formatCurrency } from 'frontend-shopify'
-import { Card, CardContent } from '../../../shadcn/ui/card'
+import { CardContent } from '../../../shadcn/ui/card'
 import SwipeableShopifyProductImages from './images/SwipeableShopifyProductImages'
 import { ShopifyProductModal, ShopifyAddToCartButton } from '..'
 import { OkendoStarRating } from '../../addons'
@@ -80,6 +80,7 @@ export default function ShopifyProductCard({
 					{enableAddToCart && (
 						<ShopifyAddToCartButton
 							product={product}
+              /* @ts-ignore */
 							variant={product?.variants?.edges[0]?.node}
 							label={buttonText}
 							enableQuantity={enableQuantity}

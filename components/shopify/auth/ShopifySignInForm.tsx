@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../../shadcn/ui/button'
+import { Button } from '../../../tailwind'
 import { TextInput, IconLoading } from '../..'
 import { ShopifyCustomerType } from 'frontend-shopify'
 
@@ -43,7 +43,6 @@ const SignInForm: React.FC<SignInFormProps> = (props) => {
 			/>
 			<Button
 				className="w-full"
-				variant="default"
 				onClick={handleSubmit}
 				disabled={loading}
 			>
@@ -51,7 +50,7 @@ const SignInForm: React.FC<SignInFormProps> = (props) => {
 				{loading && <IconLoading className="ml-2 h-4 w-4 animate-spin" />}
 			</Button>
 			{handleSignup && (
-				<Button className="w-full" variant="outline" onClick={handleSignup}>
+				<Button className="w-full" variant="text" onClick={handleSignup}>
 					No account? Sign up
 				</Button>
 			)}

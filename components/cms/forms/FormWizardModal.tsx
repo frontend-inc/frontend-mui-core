@@ -12,7 +12,7 @@ const FormWizardModal: React.FC<FormWizardModalProps> = (props) => {
 	const { open, handleClose } = props || {}
 
 	return (
-		<Modal fullScreen disablePadding open={open} handleClose={handleClose}>
+		<Modal open={open} handleClose={handleClose}>
 			<FormWizard {...props} />
 		</Modal>
 	)

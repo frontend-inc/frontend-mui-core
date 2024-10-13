@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { Typography } from '../../../tailwind'
-import { Card, CardContent } from '../../../shadcn/ui/card'
+import { Card } from '../../../shadcn/ui/card'
 import { Button } from '../../../shadcn/ui/button'
 import { useApp } from '../../../hooks'
 import { truncate } from '../../../helpers'
@@ -47,6 +47,7 @@ export default function ShopifyCollectionCard({
 		<Card className="relative w-full rounded-lg">
 			<div className="relative w-full h-full">
 				<Image
+          // @ts-ignore
 					src={image?.url}
 					alt={title || 'Collection image'}
 					layout="fill"

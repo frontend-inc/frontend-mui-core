@@ -106,8 +106,6 @@ const FormInput: React.FC<FormInputProps> = (props) => {
 			disableDebounce: true,
 		},
 		text: {
-			multiline: true,
-			rows: 6,
 			disableDebounce: true,
 		},
 		select: {

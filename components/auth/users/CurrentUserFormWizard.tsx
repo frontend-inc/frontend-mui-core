@@ -145,8 +145,6 @@ const CurrentUserFormWizard: React.FC<CurrentUserFormWizardProps> = (props) => {
 				{buttonText}
 			</Button>
 			<Modal
-				fullScreen
-				disablePadding
 				open={open}
 				handleClose={() => setOpen(false)}
 			>

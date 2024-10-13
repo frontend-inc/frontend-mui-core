@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Stack, Box, Typography } from '../../../tailwind'
+import { Container, Stack, Typography } from '../../../tailwind'
 import { Image } from '../..'
 import { HeroCardProps } from './HeroCard'
 

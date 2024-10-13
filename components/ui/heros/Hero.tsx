@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = (props) => {
 			}
 			image={image}
 			secondaryAction={
-				buttons && <ButtonActions resource={{}} buttons={buttons} />
+				buttons && <ButtonActions buttons={buttons} />
 			}
 		/>
 	)

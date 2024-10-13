@@ -1,11 +1,14 @@
 import React from 'react'
 import { Typography } from '../../../tailwind'
-import { Checkbox } from '@/shadcn/ui/checkbox'
+import { Checkbox } from '../../../shadcn/ui/checkbox'
 import { OptionType } from '../../../types'
 
 type CheckboxFilterItemProps = {
 	label?: string
-	option: OptionType
+	option: {
+    label: string
+    value: string | number | boolean 
+  }
 	values?: any[]
 	handleClick: () => void
 }
