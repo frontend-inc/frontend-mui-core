@@ -4,15 +4,15 @@ import { Icon } from '../../../components'
 import { cn } from '../../../shadcn/lib/utils'
 
 type ButtonTabsProps = {
-	handleChange: (value: number | string) => void
+	handleChange: (value: string) => void
 	options: {
 		icon?: string
 		label?: string
-		value: string | number
+		value: string
 	}[]
 	className?: string
 	fullWidth?: boolean
-	value: string | number
+	value: string
 }
 
 export default function ButtonTabs({

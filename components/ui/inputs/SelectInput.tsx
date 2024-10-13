@@ -8,14 +8,16 @@ import {
 } from '../../../shadcn/ui/select'
 import { InputLabel } from '../../../components'
 import { cn } from '../../../shadcn/lib/utils'
+import { SyntheticEventType } from 'frontend-js'
 
 type SelectInputPropsType = {
-	label: string
+	label?: string
 	direction?: 'column' | 'row'
 	name: string
 	value: string
+  placeholder?: string
 	options?: { value: string; label: string }[]
-	handleChange: (e: { target: { name: string; value: string } }) => void
+	handleChange: (e: SyntheticEventType) => void
 	info?: string
 }
 

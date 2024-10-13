@@ -3,7 +3,7 @@ import { SearchInput } from '../../../components'
 import { IconButton, Hidden } from '../../../tailwind'
 import { Edit, Filter, Trash } from 'lucide-react'
 import { Button } from '../../../shadcn/ui/button'
-import { Badge } from '../../../shadcn/ui/badge'
+import { Badge } from '../../../tailwind'
 import {
 	Popover,
 	PopoverContent,
@@ -21,11 +21,11 @@ type TableToolbarProps = {
 	handleKeywordChange: (e: any) => void
 	handleKeywordSearch: (term: string) => void
 	handleFilter: (ev: any) => void
-	handleEdit?: (items: any[]) => void
-	handleDelete?: (items: any[]) => void
+	handleEdit: (items: any[]) => void
+	handleDelete: (items: any[]) => void
 	handleClearQuery: () => void
-	handlePublish?: (items: any[]) => void
-	handleUnpublish?: (items: any[]) => void
+	handlePublish: (items: any[]) => void
+	handleUnpublish: (items: any[]) => void
 	secondaryActions?: React.ReactNode
 	fields: any[]
 	handleSearch: (keywords: any) => void
@@ -115,7 +115,6 @@ const TableToolbar: React.FC<TableToolbarProps> = (props) => {
 									{enableDelete && (
 										<Button
 											color="secondary"
-											variant="contained"
 											onClick={() => handleDelete(selected)}
 										>
 											Delete
@@ -125,14 +124,12 @@ const TableToolbar: React.FC<TableToolbarProps> = (props) => {
 										<>
 											<Button
 												color="secondary"
-												variant="contained"
 												onClick={() => handlePublish(selected)}
 											>
 												Publish
 											</Button>
 											<Button
 												color="secondary"
-												variant="contained"
 												onClick={() => handleUnpublish(selected)}
 											>
 												Unpublish
@@ -154,12 +151,12 @@ const TableToolbar: React.FC<TableToolbarProps> = (props) => {
 							{selected?.length > 0 && (
 								<>
 									{enableDelete && (
-										<IconButton onClick={handleDelete}>
+										<IconButton onClick={() => handleDelete(selected)}>
 											<Trash className="w-5 h-5 text-foreground" />
 										</IconButton>
 									)}
 									{enableEdit && (
-										<IconButton onClick={handleEdit}>
+										<IconButton onClick={() => handleEdit(selected)}>
 											<Edit className="w-5 h-5 text-foreground" />
 										</IconButton>
 									)}

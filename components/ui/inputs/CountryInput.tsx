@@ -12,6 +12,7 @@ const CountryInput: React.FC<SelectInputPropsType> = (props) => {
 			label={label}
 			errors={errors}
 			value={value}
+      //@ts-ignore
 			options={COUNTRIES}
 			handleChange={handleChange}
 		/>

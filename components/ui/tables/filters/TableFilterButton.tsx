@@ -26,7 +26,7 @@ export default function TableFilterButton(props: TableFilterButtonProps) {
 
 	return (
 		<div className="relative inline-flex">
-			<Badge className="absolute -top-2 -right-2 z-10" variant="primary">
+			<Badge className="absolute -top-2 -right-2 z-10">
 				{badgeCount}
 			</Badge>
 			<div className="inline-flex rounded-md shadow-sm" role="group">

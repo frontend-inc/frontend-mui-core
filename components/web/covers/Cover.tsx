@@ -11,7 +11,7 @@ export type CoverProps = {
 	description?: string
 	buttonText?: string
 	textVariant?: 'h1' | 'h2' | 'h3'
-	image?: string
+	image: string
 	height?: number
 	width?: number
 	alignItems?: 'flex-start' | 'center' | 'flex-end'
@@ -20,7 +20,6 @@ export type CoverProps = {
 	enableGradient?: boolean
 	enableOverlay?: boolean
 	opacity?: number
-	overlayColor?: string
 	path?: string
 }
 
@@ -40,7 +39,6 @@ const Cover: React.FC<CoverProps> = (props) => {
 		enableOverlay = false,
 		opacity = 0.65,
 		alignItems = 'center',
-		overlayColor = '#000000',
 		buttonText,
 		path,
 	} = props
@@ -61,7 +59,6 @@ const Cover: React.FC<CoverProps> = (props) => {
 					src={image}
 					alt={alt}
 					aspectRatio={2.5}
-					bgcolor={overlayColor}
 					enableGradient={enableGradient}
 					enableOverlay={enableOverlay}
 					opacity={opacity}
@@ -73,7 +70,6 @@ const Cover: React.FC<CoverProps> = (props) => {
 					src={image}
 					alt={alt}
 					aspectRatio={1.0}
-					bgcolor={overlayColor}
 					enableGradient={enableGradient}
 					enableOverlay={enableOverlay}
 					opacity={opacity}

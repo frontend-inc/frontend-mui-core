@@ -1,11 +1,12 @@
 import React from 'react'
-import { Typography } from '../../../../tailwind'
 import { SelectInput } from '../../..'
-import { OptionType } from '../../../../types'
 
 type TableFilterSortProps = {
 	label: string
-	fieldOptions: OptionType[]
+	fieldOptions: {
+    label: string 
+    value: string 
+  }[]
 	sortBy?: string
 	sortDirection?: 'asc' | 'desc'
 	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void

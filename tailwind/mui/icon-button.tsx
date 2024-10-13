@@ -21,12 +21,7 @@ const IconButton: React.FC<IconButtonProps> = ({
 	children,
 	...props
 }) => {
-	const colorMap: Record<IconButtonColor, ShadcnButtonProps['variant']> = {
-		primary: 'default',
-		ghost: 'ghost',
-		secondary: 'secondary',
-	}
-
+	
 	const variantClasses: Record<IconButtonVariant, string> = {
 		rounded: 'rounded-md',
 		circular: 'rounded-full',

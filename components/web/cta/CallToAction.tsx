@@ -36,8 +36,7 @@ const CallToAction: React.FC<CallToActionProps> = (props) => {
 				)}
 				{buttons?.length > 0 && (
 					<div>
-						<ButtonActions
-							resource={[]}
+						<ButtonActions							
 							buttons={buttons}
 							size="large"
 							justifyContent="center"

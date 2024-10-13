@@ -44,6 +44,7 @@ const TableRow: React.FC<TableRowProps> = (props) => {
 					<div className="mx-2">
 						<Checkbox
 							value={selected}
+              //@ts-ignore 
 							handleChange={handleSelect ? () => handleSelect(row) : undefined}
 						/>
 					</div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Stack, Typography } from '../../../tailwind'
-import { Container, Heading } from '../..'
+import { Container, Stack, Typography } from '../../../tailwind'
+import { Heading } from '../..
 import { TypographyVariantsType } from '../../../types'
 
 export type TextProps = {
