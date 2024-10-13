@@ -259,10 +259,14 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 
   const searchParams = useSearchParams()
 
-	useEffect(() => {
+	useEffect(() => {    
 		if (searchParams) {
-			let parsedQuery = apiQuery.parseURL(searchParams).query()
-			//@ts-ignore
+      const queryObject = {};
+      searchParams.forEach((value, key) => {
+        queryObject[key] = value;
+      });    
+
+			let parsedQuery = apiQuery.parseURL(queryObject).query()
 			findDocuments(parsedQuery)
 		}
 	}, [searchParams])
