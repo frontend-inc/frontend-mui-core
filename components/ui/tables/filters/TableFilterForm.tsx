@@ -80,9 +80,7 @@ export default function TableFilterForm({
 			filters,
 		}
 
-    console.log('searchQuery', filters);
-
-		handleSearch(searchQuery)
+    handleSearch(searchQuery)
 	}
 
 	const handleFilterFields = (
@@ -138,10 +136,6 @@ export default function TableFilterForm({
       setActiveFilters(formattedFilters);
     }
   }, [query]);
-
-  useEffect(() => {
-    console.log('activeFilters', activeFilters, query);
-  }, [activeFilters]);
 
 	return (
 		<div className="space-y-2">
