@@ -1,6 +1,6 @@
 import React from 'react'
 import { ResourceToolbarModal } from '../../../../components'
-import { Button } from '../../../../shadcn/ui/button'
+import { Button } from '../../../../tailwind'
 import { useAdminForms } from '../../../../hooks'
 
 const AdminProductToolbar = (props) => {
@@ -18,7 +18,7 @@ const AdminProductToolbar = (props) => {
 
 	return (
 		<ResourceToolbarModal open={open} handleClose={handleClose}>
-			<Button onClick={handleAddQuestions} icon="Plus">
+			<Button onClick={handleAddQuestions} startIcon="Plus">
 				Add Questions
 			</Button>
 		</ResourceToolbarModal>
