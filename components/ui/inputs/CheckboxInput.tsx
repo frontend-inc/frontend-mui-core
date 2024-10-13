@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SyntheticEventType } from '../../../types'
 import { Checkbox } from '../../../shadcn/ui/checkbox'

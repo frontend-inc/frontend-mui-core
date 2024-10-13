@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SignInButton } from '../../../components'
 import { SignInButtonProps } from './SignInButton'

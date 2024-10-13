@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { ShopifyAddToCartButton, ShopifyQuickShopButton } from '..'
 import { Stack, Typography } from '../../../tailwind'

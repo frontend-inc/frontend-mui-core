@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ProductListProps } from '../../shop/products/ProductList'
 import { ProductList, ProductReferenceListItems } from '../..'

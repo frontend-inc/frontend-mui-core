@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import { ButtonTabs } from '../../../components'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { RouterParams } from '../../../types'
 
 type CollectionSchemaToggleProps = {
@@ -12,7 +14,7 @@ const CollectionSchemaToggle: React.FC<CollectionSchemaToggleProps> = (
 ) => {
 	const router = useRouter()
 	const { app_id: appId, collection_id: collectionId } =
-		router?.query as RouterParams
+		useParams() as any
 
 	const { tab = 'content' } = props
 

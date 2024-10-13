@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Container, Typography } from '../../../tailwind'
 import { Label, Image, BrandLogos } from '../..'

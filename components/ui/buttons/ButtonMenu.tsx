@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import { Icon } from '../../../components'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { DropdownMenuItem } from '../../../shadcn/ui/dropdown-menu'
 
 type ButtonMenuProps = {

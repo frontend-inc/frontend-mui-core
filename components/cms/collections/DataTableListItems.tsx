@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { useResourceContext } from 'frontend-js'
 import { useApp } from '../../../hooks'
 import { TableHeaderType } from '../../../types'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { TableList } from '../..'
 import { DataListItemsProps } from '../data/DataListItems'
 import { cn } from '../../../shadcn/lib/utils'

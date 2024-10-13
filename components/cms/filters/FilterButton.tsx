@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Icon, Drawer, IconLoading } from '../..'
 import FilterList from './FilterList'

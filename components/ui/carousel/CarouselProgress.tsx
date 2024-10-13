@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Button } from '../../../shadcn/ui/button'
 import { Progress } from '../../../shadcn/ui/progress'

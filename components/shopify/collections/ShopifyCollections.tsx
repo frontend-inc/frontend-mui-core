@@ -1,6 +1,8 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useCollections } from 'frontend-shopify'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../../hooks'
 import { ShopifyCollectionCard } from '../../../components'
 import { cn } from '../../../shadcn/lib/utils'

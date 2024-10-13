@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import MobileDrawer from './MobileDrawer'
 import MobileHeader from './MobileHeader'

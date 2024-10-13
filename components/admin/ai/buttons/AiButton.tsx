@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { AlertModal } from '../../../../components'
 import { IconButton } from '../../../../tailwind'

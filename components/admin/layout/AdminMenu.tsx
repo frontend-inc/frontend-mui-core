@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { MenuList, MenuListItem } from '../../../components'
 import { AdminMenusType } from '../../../types'
 
-type AdminMenuItemsProps = {
+type AdminMenuProps = {
 	menuItems: AdminMenusType
 	activeMenu: string
 	enableEdit?: boolean
@@ -12,7 +14,7 @@ type AdminMenuItemsProps = {
 	handleDelete: (menuItem: any) => void
 }
 
-const AdminMenusItems: React.FC<AdminMenuItemsProps> = (props) => {
+const AdminMenu: React.FC<AdminMenuProps> = (props) => {
 	const {
 		menuItems = {},
 		activeMenu,
@@ -45,4 +47,4 @@ const AdminMenusItems: React.FC<AdminMenuItemsProps> = (props) => {
 	)
 }
 
-export default AdminMenusItems
+export default AdminMenu

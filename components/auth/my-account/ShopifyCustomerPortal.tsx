@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Placeholder, PrimaryButton } from '../../../components'
 import { useAlerts, useApp } from '../../../hooks'

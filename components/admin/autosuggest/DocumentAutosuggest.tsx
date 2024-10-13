@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useCollections } from '../../../hooks'
 import { RemoteAutosuggest } from '../../../components'

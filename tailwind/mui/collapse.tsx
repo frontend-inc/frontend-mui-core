@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '../../shadcn/lib/utils'

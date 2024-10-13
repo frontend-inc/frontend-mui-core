@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceList } from '../../../../components'
 import { useAdmin } from '../../../../hooks'

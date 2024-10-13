@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import { ShopifyProductCard } from '..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useSegment } from '../../../hooks/addons'
 import { ShopifyProductType } from 'frontend-shopify'
 import { useApp } from '../../../hooks'

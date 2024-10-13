@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Section, Heading, GeoNearbyList } from '../../components'
 import { CollectionListProps } from '../../components/cms/collections/CollectionList'

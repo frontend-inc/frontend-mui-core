@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import ShopContext from './ShopContext'
 import { CartType } from '../types'

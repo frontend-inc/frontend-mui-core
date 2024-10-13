@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { useAuth } from 'frontend-shopify'
 import { UserMenu } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../../hooks'
 
 const ShopifyAuthButton: React.FC = () => {

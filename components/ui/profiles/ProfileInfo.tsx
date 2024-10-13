@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SocialLink, FieldString, FieldText } from '../../../components'
 

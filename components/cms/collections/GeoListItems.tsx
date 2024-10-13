@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { ResourceContext } from 'frontend-js'
 import { GoogleMap, CollectionListItems } from '../..'

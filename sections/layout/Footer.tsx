@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Footer } from '../../components'
 import { FooterProps } from '../../components/ui/footer/Footer'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../hooks'
 
 type LayoutFooterProps = FooterProps & {

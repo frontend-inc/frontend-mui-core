@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CollectionList, GeoHeader } from '../..'
 import { CollectionListProps } from '../collections/CollectionList'

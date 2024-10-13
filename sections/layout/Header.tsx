@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Header } from '../../components'
 import { HeaderProps } from '../../components/ui/header/Header'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../hooks'
 
 type LayoutHeaderProps = HeaderProps & {

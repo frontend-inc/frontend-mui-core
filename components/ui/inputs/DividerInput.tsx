@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Separator } from '../../../shadcn/ui/separator'
 import { cn } from '../../../shadcn/lib/utils'

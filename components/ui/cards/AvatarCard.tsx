@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ListCard } from '../../../components'
 import { CardProps } from './Card'

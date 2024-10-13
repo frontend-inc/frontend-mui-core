@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CollectionList } from '../../../components'
 import { CollectionListProps } from '../collections/CollectionList'

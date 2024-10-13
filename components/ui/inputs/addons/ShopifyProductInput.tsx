@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState, useContext } from 'react'
 import { AutocompleteInput } from '../../../../components'
 import { Image, Placeholder } from '../../../../components'

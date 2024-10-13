@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Icon, Image, MenuButton } from '../../..'
 import { cn } from '../../../../shadcn/lib/utils'

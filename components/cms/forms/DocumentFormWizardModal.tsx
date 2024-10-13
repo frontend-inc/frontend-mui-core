@@ -1,9 +1,11 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { useApp } from '../../../hooks'
 import { useResource } from 'frontend-js'
 import FormWizardModal from './FormWizardModal'
 import FormCard from './wizard/FormCard'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 export type DocumentFormWizardModalProps = {
 	handle: string

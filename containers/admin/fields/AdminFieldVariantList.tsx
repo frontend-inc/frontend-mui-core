@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import AdminFieldVariantItem from './AdminFieldVariantItem'
 import { FIELD_VARIANTS } from '../../../constants'
 import { groupBy } from '../../../helpers'

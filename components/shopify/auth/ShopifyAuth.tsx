@@ -1,10 +1,12 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { ShopifyContext } from 'frontend-shopify'
 import { Button } from '../../../shadcn/ui/button'
 import { Typography } from '../../../tailwind'
 import { useShop } from 'frontend-shopify'
 import { Icon } from '../../../components'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type DesktopAuthButtonProps = {
 	handleClick: () => void

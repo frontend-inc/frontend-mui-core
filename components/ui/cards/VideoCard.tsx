@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, TouchableOpacity, Icon } from '../..'
 import { cn } from '../../../shadcn/lib/utils'

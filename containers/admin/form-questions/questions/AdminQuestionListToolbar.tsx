@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceToolbarModal } from '../../../../components'
 import { Button } from '../../../../tailwind'

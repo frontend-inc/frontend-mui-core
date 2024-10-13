@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useContext } from 'react'
 import { ApiContext, ApiQuery } from 'frontend-js'
 import { useLoaders } from '..'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Cover } from '../..'
 import { ProductCollectionType } from '../../../types'

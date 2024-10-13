@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Dialog, DialogContent } from '../../shadcn/ui/dialog'
 import { cn } from '../../shadcn/lib/utils'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { isProductFavorited } from '../../../helpers'
 import { useAuth } from 'frontend-js'

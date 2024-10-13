@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { ResourceDetails, ResourceModal } from '../../../components'
 import { useResourceContext } from 'frontend-js'

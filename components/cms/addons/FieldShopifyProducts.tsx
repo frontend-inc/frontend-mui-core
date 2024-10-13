@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ShopifyProductArray } from '../../shopify'
 import { get } from 'lodash'

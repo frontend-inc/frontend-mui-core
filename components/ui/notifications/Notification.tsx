@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { cn } from '../../../shadcn/lib/utils'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useClickOrDrag } from '../../../hooks'
 import { useApp } from '../../../hooks'
 import { NotificationType } from '../../../types'

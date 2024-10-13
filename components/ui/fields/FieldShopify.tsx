@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { FieldString } from '../..'
 import { TypographyVariantsType } from '../../../types'

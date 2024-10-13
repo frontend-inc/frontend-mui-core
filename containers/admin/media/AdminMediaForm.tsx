@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Drawer, ButtonTabs } from '../../../components'
 import { ResourceFormProps } from '../../../components/cms/resources/ResourceForm'

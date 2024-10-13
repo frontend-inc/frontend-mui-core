@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { TableHeaderType } from '../../../types'
 import { ResourceList, TableList } from '../../../components'

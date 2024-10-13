@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { AuthLayout, AuthScreen } from '../..'
 import { ShopifyRegisterForm } from '..'
 import { useAuth } from 'frontend-shopify'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ShopifyRegisterProps = {
 	title?: string

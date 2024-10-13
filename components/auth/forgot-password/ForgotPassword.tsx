@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { ForgotPasswordForm, AuthScreen, Loader } from '../..'
 import { useAlerts } from '../../../hooks'
 import { useAuth } from 'frontend-js'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ForgotPasswordProps = {
 	title: string

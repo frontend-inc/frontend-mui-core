@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useResource, useResourceContext } from 'frontend-js'
 import { Button } from '../../../shadcn/ui/button'

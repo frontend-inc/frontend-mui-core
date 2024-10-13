@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { useApp } from '../../../hooks'
 import { Button } from '../../../tailwind'
@@ -5,7 +7,7 @@ import FormWizardProgress from '../../cms/forms/wizard/FormWizardProgress'
 import FormWizardField from '../../cms/forms/wizard/FormWizardField'
 import FormWizardButtons from '../../cms/forms/wizard/FormWizardButtons'
 import { Modal } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useAuth } from 'frontend-js'
 
 export type CurrentUserFormWizardProps = {

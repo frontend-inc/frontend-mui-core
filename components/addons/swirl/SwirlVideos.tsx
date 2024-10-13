@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SwirlShortVideos } from 'swirl-short-videos-typescript'
 

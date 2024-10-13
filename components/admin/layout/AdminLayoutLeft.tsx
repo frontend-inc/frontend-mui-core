@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { useAdmin } from '../../../hooks'
 import { ExpandLeftButton, AdminHeader, Drawer } from '../../../components'

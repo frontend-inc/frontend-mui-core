@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceListItem, Label } from '../../../components'
 import { ResourceItemProps } from '../../../components/cms/resources/ResourceItem'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { MenuListItem } from '../../../components'
 import { FIELD_VARIANTS } from '../../../constants'

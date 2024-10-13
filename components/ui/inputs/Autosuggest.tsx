@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { InputLabel } from '../../../components'
 import { Check, ChevronsUpDown } from 'lucide-react'

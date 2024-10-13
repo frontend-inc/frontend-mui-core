@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { useApp } from '../../../hooks'
 import { Swipeable, Cover, Placeholder } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 export type CoverCarouselProps = {
 	items: {

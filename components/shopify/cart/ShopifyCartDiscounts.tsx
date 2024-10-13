@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useCart } from 'frontend-shopify'
 import { Button, TextField } from '../../../tailwind'

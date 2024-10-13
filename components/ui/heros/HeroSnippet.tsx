@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Card } from '../../../shadcn/ui/card'
 import { AvatarImage, Image } from '../..'

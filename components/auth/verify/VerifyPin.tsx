@@ -1,9 +1,11 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Button } from '../../../tailwind'
 import { VerifyPinForm, VerifySendPinForm, AuthScreen, Loader } from '../..'
 import { useAuth } from 'frontend-js'
 
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type VerifyPinProps = {
 	title: string

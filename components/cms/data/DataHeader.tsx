@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Button } from '../../../tailwind'
 import { Icon, FilterButton, SortButton, SearchInput } from '../..'

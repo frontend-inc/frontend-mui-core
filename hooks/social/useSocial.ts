@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useApi } from 'frontend-js'
 import { useLoaders } from '..'

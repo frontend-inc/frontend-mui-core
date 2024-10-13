@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { PriceOptionType, SearchFilterType } from 'frontend-shopify'
 import { formatCurrency } from 'frontend-shopify'

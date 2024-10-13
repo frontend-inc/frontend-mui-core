@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import {
 	Stack,
@@ -8,7 +10,7 @@ import {
 	ListItem,
 	ListItemText,
 } from '../../../tailwind'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Label } from '../..'
 import { AppContext } from '../../../context'
 import { formatCurrency } from 'frontend-shopify'

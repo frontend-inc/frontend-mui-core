@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { AuthScreen, Loader, OneTimePasswordVerifyMessage } from '../..'
 import { useAuth } from 'frontend-js'
 
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type OneTimePasswordVerifyProps = {
 	redirectUrl: string
@@ -13,7 +15,7 @@ type OneTimePasswordVerifyProps = {
 
 const OneTimePasswordVerify: React.FC<OneTimePasswordVerifyProps> = (props) => {
 	const router = useRouter()
-	const { token: oneTimePassword } = router.query
+	const { token: oneTimePassword } = useParams() as any
 
 	const [verified, setVerified] = useState(false)
 

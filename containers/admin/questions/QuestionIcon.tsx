@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Icon } from '../../../components'
 import { QUESTION_VARIANTS } from '../../../constants'

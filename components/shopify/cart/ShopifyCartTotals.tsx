@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useCart } from 'frontend-shopify'
 import { formatCurrency } from 'frontend-shopify'

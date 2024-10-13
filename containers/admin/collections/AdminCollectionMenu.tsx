@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { MenuList, AlertModal } from '../../../components'
 import { Button } from '../../../tailwind'
@@ -7,7 +9,7 @@ import AdminCollectionEdit from './AdminCollectionEdit'
 import AdminViewEdit from '../views/AdminViewEdit'
 import { ApiQuery } from 'frontend-js'
 import { RouterParams } from '../../../types'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Plus } from 'lucide-react'
 
 const AdminCollectionMenu: React.FC = () => {
@@ -16,7 +18,7 @@ const AdminCollectionMenu: React.FC = () => {
 		app_id: appId,
 		view_id: viewId,
 		collection_id: collectionId,
-	} = router.query as RouterParams
+	} = useParams() as any
 
 	const apiQuery = new ApiQuery()
 

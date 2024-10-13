@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useResourceContext } from 'frontend-js'
 import { useFilters } from '..'

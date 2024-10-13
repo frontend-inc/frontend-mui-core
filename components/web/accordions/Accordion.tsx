@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Container, Stack } from '../../../tailwind'
 import { AccordionItem, Placeholder } from '../../../components'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useAuth } from 'frontend-js'
 import { Heading, AuthWall, PayWall } from '..'

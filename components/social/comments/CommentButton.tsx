@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useResourceContext } from 'frontend-js'
 import { MessageCircle } from 'lucide-react'

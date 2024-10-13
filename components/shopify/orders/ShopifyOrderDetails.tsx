@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Button } from '../../../shadcn/ui/button'
 import { ScrollArea } from '../../../shadcn/ui/scroll-area'
 import {
@@ -8,7 +10,7 @@ import {
 import { formatCurrency } from 'frontend-shopify'
 import { ShopifyOrderType, OrderLineItemType } from 'frontend-shopify'
 import { ExternalLink } from 'lucide-react'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { cn } from '../../../shadcn/lib/utils'
 
 type ShopifyOrderDetailsProps = {

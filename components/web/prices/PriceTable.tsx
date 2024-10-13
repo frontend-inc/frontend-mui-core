@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import PriceTableCard from './PriceTableCard'
 import { PriceType } from '../../..'

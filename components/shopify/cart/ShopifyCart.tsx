@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useContext } from 'react'
 import { useCart } from 'frontend-shopify'
 import { useSegment } from '../../../hooks/addons'

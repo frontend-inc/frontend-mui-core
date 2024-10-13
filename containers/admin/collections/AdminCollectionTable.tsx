@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { AlertModal } from '../../../components'
 import { useAlerts } from '../../../hooks'
@@ -6,11 +8,11 @@ import { Table } from '../../../components'
 import { ImageModal, AdminVideoModal } from '../../../components'
 import { TableFilterDrawer } from '../../../components'
 import AdminToolbarMenu from './AdminToolbarMenu'
-import { useRouter } from 'next/router'
+import { useRouter, useParams, usePathname } from 'next/navigation'
 import copy from 'copy-to-clipboard'
 import { USER_FIELD, ID_FIELD, PUBLISHED_FIELD } from '../../../constants'
 import { ApiQuery } from 'frontend-js'
-import { RouterParams } from '../../../types'
+
 
 type AdminCollectionTableProps = {
 	collection: any
@@ -23,7 +25,7 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 	const apiQuery = new ApiQuery()
 
 	const router = useRouter()
-	const { collection_id: collectionId } = router?.query as RouterParams
+	const { collection_id: collectionId } = useParams() as any
 
 	const { fields } = collection || {}
 	const [selected, setSelected] = useState([])
@@ -219,7 +221,7 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 	const handleClearFilters = () => {
 		setShowFilters(false)
 		let query = {
-			...router.query,
+			...useParams() as any,
 			filters: {
 				AND: [],
 				OR: [],
@@ -231,7 +233,7 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 	}
 
 	const handleSort = (field) => {
-		apiQuery.parseURL(router.query)
+		apiQuery.parseURL(useParams() as any)
 		apiQuery.sort(field?.name)
 		router.push(`${clientUrl}/collections/${collection.name}?${apiQuery.url()}`)
 	}
@@ -255,13 +257,15 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 		}
 	}, [fields])
 
+  const pathname = usePathname()
+
 	useEffect(() => {
-		if (router?.query) {
-			let parsedQuery = apiQuery.parseURL(router.query).query()
+		if (pathname) {
+			let parsedQuery = apiQuery.parseURL(pathname).query()
 			//@ts-ignore
 			findDocuments(parsedQuery)
 		}
-	}, [router?.query])
+	}, [pathname])
 
 	return (
 		<div>

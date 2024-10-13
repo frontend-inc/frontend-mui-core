@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { UserAvatar, Label, ResourceListItem } from '../../../components'
 import { truncate } from '../../../helpers'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import FormWizardProgress from './wizard/FormWizardProgress'
 import FormWizardField from './wizard/FormWizardField'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { ResourceHeader } from '../../../components'
 import { ResourceHeaderProps } from '../../../components/cms/resources/ResourceHeader'

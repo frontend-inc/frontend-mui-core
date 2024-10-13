@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { useApp, useCart } from '../../../hooks'
 import { Image, Icon } from '../../../components'
 import { Typography } from '../../../tailwind'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { LineItemType } from '../../../types'
 import { Button } from '../../../shadcn/ui/button'
 import { cn } from '../../../shadcn/lib/utils'

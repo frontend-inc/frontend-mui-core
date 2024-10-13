@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { YouTubeEmbed } from '../..'
 import { ShowProps } from './ShowItem'

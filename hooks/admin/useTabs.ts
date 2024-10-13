@@ -1,4 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useContext } from 'react'
 import { AdminContext } from '../../context'
 
 const useTabs = (tab: string) => {

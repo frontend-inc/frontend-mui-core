@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ResourceDetails from './ResourceDetails'
 import ResourceModal from './ResourceModal'

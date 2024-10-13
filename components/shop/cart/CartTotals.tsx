@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Stack, Typography } from '../../../tailwind'
 import { useCart } from '../../../hooks'

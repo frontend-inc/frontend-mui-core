@@ -1,10 +1,12 @@
+'use client'
+
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthScreen, AlertModal, Loader } from '../..'
 import { Button } from '../../../tailwind'
 import { useAddresses } from 'frontend-shopify'
 import { ShopifyAddressForm } from '..'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type AddressProps = {
 	title?: string
@@ -17,7 +19,7 @@ type AddressRouterParams = {
 
 const Address: React.FC<AddressProps> = (props) => {
 	const router = useRouter()
-	let { address_id: addressId } = router?.query as AddressRouterParams
+	let { address_id: addressId } = useParams() as any
 	if (addressId == 'new') {
 		addressId = null
 	}

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, Icon, Label, MenuButton } from '../../../../components'
 import { PublishLabel } from '../../../../components'

@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { Image } from '../../../components'
 import { Typography } from '../../../tailwind'
 import { FormType } from '../../../types'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Card } from '../../../shadcn/ui/card'
 import { Button } from '../../../shadcn/ui/button'
 
@@ -13,7 +15,7 @@ type AdminFormProps = {
 
 export default function AdminFormDetails(props: AdminFormProps) {
 	const router = useRouter()
-	const { app_id: appId } = router.query || {}
+	const { app_id: appId } = useParams() as any
 
 	const { form, handleEdit } = props || {}
 

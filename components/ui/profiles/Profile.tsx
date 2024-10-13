@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, Label, ExpandableText, SocialLink } from '../..'
 import { Typography } from '../../../tailwind'

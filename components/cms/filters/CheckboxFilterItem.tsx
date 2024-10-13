@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Typography } from '../../../tailwind'
 import { Checkbox } from '../../../shadcn/ui/checkbox'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Avatar, AvatarImage } from '../../../shadcn/ui/avatar'
 import { ScrollArea } from '../../../shadcn/ui/scroll-area'

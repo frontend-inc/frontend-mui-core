@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Button, Collapse } from '../../../../tailwind'
 import { Image, InputLabel, Drawer, BrandfetchInput } from '../../..'

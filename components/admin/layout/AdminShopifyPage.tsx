@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import {
 	AdminHeader,
@@ -10,7 +12,7 @@ import {
 } from '../..'
 import { AdminMenusType, AdminMenuType } from '../../../types'
 import { useAdmin, useApps, useTabs } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { ShopifyProvider } from 'frontend-shopify'
 
 export type AdminShopifyPageProps = {
@@ -32,7 +34,7 @@ const AdminShopifyPage: React.FC<AdminShopifyPageProps> = (props) => {
 	const router = useRouter()
 	const { clientUrl } = useAdmin()
 
-	const { app_id: appId } = router.query
+	const { app_id: appId } = useParams() as any
 
 	const { loading, app, findApp } = useApps()
 

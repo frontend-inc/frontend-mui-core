@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { LoginForm, AuthScreen, Loader } from '../..'
 import { useAuth } from 'frontend-js'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../../hooks'
 
 export type LoginProps = {

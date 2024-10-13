@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Slider } from '../../../shadcn/ui/slider'
 import { cn } from '../../../shadcn/lib/utils'

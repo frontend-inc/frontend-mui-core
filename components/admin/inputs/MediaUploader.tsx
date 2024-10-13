@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useMedia, useAlerts } from '../../../hooks'
 import { DropZone } from '../../../components'

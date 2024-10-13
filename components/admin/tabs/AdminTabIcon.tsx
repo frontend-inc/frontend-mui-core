@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { IconButton } from '../../../tailwind'
 import { cn } from '../../../shadcn/lib/utils'

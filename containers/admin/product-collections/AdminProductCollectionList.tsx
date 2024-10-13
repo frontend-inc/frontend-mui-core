@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceList } from '../../../components'
 import { useAdmin } from '../../../hooks'
@@ -7,7 +9,7 @@ import AdminProductCollectionEdit from './AdminProductCollectionEdit'
 import AdminProductCollectionShow from './AdminProductCollectionShow'
 import AdminProductCollectionToolbar from './AdminProductCollectionToolbar'
 import AdminProductCollectionHeader from './AdminProductCollectionHeader'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 const AdminProductCollectionsList: React.FC = () => {
 	const router = useRouter()

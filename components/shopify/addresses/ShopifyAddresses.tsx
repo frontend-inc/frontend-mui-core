@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { AuthScreen, AlertModal, Loader } from '../../../components'
 import { Plus } from 'lucide-react'
@@ -5,7 +7,7 @@ import { Button } from '../../../tailwind'
 import { useAddresses } from 'frontend-shopify'
 import { ShopifyAddressList } from '../../../components/shopify'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { getShopifyIdFromGid } from 'frontend-shopify'
 
 type AddressesProps = {

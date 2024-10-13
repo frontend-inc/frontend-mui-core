@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useAuth } from 'frontend-js'
 import { AuthScreen, MyAccountForm } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type MyAccountProps = {
 	redirectUrl: string

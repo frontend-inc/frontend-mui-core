@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import * as icons from 'lucide-react'
 import { cn } from '../../shadcn/lib/utils'

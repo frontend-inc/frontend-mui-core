@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { isLiked } from '../../../helpers'
 import { useSocial, useApp } from '../../../hooks'

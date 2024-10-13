@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef } from 'react'
 import { getShopifyIdFromGid } from 'frontend-shopify'
 import { useProducts } from 'frontend-shopify'

@@ -1,5 +1,7 @@
+'use client'
+
 import React from 'react'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Typography } from '../../../tailwind'
 import { Card } from '../../../shadcn/ui/card'
 import { Button } from '../../../shadcn/ui/button'

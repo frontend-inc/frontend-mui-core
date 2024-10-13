@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Button } from '../../../shadcn/ui/button'
 import { ChevronUp } from 'lucide-react'
 import { cn } from '../../../shadcn/lib/utils'

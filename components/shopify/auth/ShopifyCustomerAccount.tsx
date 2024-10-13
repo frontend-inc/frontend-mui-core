@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { Button } from '../../../shadcn/ui/button'
 import { AuthScreen, Placeholder } from '../..'
 import { useAuth } from 'frontend-shopify'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { User, ShoppingCart, MapPin, LogOut } from 'lucide-react'
 import { useApp } from '../../../hooks'
 

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Placeholder } from '../../../components'
 import { useResourceContext } from 'frontend-js'

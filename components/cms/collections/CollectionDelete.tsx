@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { AlertModal } from '../..'
 import { useCollectionForms } from '../../../hooks'

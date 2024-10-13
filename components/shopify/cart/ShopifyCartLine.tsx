@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState, useContext } from 'react'
 import { ShopifyContext } from 'frontend-shopify'
 import { useCart } from 'frontend-shopify'
@@ -7,7 +9,7 @@ import Image from 'next/image'
 import { Badge, Typography } from '../../../tailwind'
 import { Icon } from '../../../components'
 import { formatCurrency } from 'frontend-shopify'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { CartLineType } from 'frontend-shopify'
 import { cn } from '../../../shadcn/lib/utils'
 

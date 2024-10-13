@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Section } from '../../components'
 import { ShopifyCollectionsCoverCarousel as CollectionsCoverCarousel } from '../../components/shopify'

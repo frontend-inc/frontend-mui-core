@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Plus, Search, FilterIcon, Loader } from 'lucide-react'
 import { FILTERABLE_TYPES, SORTABLE_TYPES } from '../../../../constants/index'
 import { Button } from '../../../../shadcn/ui/button'

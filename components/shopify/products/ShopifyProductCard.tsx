@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useContext } from 'react'
 import { Typography, Button } from '../../../tailwind'
 import { truncate } from '../../../helpers'

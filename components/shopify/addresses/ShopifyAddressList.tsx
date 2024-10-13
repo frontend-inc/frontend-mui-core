@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ShopifyAddressType } from 'frontend-shopify'
 import ShopifyAddressItem from './ShopifyAddressItem'

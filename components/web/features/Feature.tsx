@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Icon } from '../..'
 import { Avatar, Stack, Typography } from '../../../tailwind'

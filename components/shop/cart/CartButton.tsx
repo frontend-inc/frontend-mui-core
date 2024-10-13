@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Badge, IconButton } from '../../../tailwind'
 import { useCart } from '../../../hooks'
 import { Icon } from '../../../components'

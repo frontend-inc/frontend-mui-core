@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import {
 	Modal,
 	LoginForm,
@@ -9,7 +11,7 @@ import {
 	VerifySendPinForm,
 } from '../..'
 import { useAuth } from 'frontend-js'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Typography, Stack } from '../../../tailwind'
 import { useApp } from '../../../hooks'
 
@@ -23,7 +25,7 @@ const AuthModal: React.FC<AuthModalProps> = (props) => {
 	const { disableUsername = false, enableGoogle, handleSuccess } = props
 
 	const router = useRouter()
-	const { app_id: appId } = router.query
+	const { app_id: appId } = useParams() as any
 
 	const { authOpen, setAuthOpen } = useApp()
 

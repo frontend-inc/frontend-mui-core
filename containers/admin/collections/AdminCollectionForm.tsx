@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { COLLECTION_TEMPLATES } from '../../../constants'
 import { FormFields, ErrorText } from '../../../components'

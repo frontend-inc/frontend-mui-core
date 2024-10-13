@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Drawer, CircularLoader } from '../..'
 import { Button, Stack } from '../../../tailwind'

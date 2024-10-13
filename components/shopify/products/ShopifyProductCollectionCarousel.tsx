@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useCollections } from 'frontend-shopify'
 import { ShopifyProductCarousel } from '../../../components/shopify'

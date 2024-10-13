@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ScrollArea } from '../../../shadcn/ui/scroll-area'
 import { ShopifyOrderType } from 'frontend-shopify'

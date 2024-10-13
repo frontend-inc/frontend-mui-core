@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import {
 	PriceOptionType,
 	SearchFilterOptionType,
@@ -7,7 +9,7 @@ import {
 } from 'frontend-shopify'
 import { ProductSortKeyType } from 'frontend-shopify'
 import { useSegment } from '../../../hooks/addons'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { SearchInput, Placeholder } from '../..'
 import {
 	ShopifyProductSortButton,
@@ -50,7 +52,7 @@ const ShopifyProductSearch: React.FC<ShopifyProductSearchProps> = ({
 	const router = useRouter()
 	const { trackProductsSearched } = useSegment()
 
-	let { page_id: pageId, handle } = router.query
+	let { page_id: pageId, handle } = useParams() as any
 	if (handle == 'index' || handle == undefined) handle = ''
 	const [query, setQuery] = useState(handle)
 

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Section, Heading } from '../../components'
 import { ProductSimilarList } from '../../components/shop'

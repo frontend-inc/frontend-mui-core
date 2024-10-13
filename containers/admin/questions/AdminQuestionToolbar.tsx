@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceToolbarModal, SecondaryButton } from '../../../components'
 import { useResource } from 'frontend-js'

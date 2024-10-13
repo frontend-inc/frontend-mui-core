@@ -1,8 +1,10 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useAuth } from 'frontend-js'
 import { Form } from '../..'
 import { useAlerts } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { FormFieldType } from '../../../types'
 import { useApp } from '../../../hooks'
 

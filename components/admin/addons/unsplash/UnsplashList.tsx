@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useUnsplash, useMedia } from '../../../../hooks'
 import { SearchInput } from '../../../../components'

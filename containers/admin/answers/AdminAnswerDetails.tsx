@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, PrimaryButton } from '../../../components'
 import { Typography } from '../../../tailwind'

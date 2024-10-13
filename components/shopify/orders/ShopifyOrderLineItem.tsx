@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Badge } from '../../../shadcn/ui/badge'
 import { Image } from '../../../components'

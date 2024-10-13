@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Typography, IconButton, Button } from '../../../../tailwind'
 import { InputPropsType } from '../../../../types'

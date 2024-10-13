@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { MetafieldAutosuggest } from '../..'
 import { MetafieldAutosuggestProps } from './MetafieldAutosuggest'

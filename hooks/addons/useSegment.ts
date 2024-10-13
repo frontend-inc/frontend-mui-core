@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { useCheckout } from 'frontend-shopify'
 import { ScriptContext } from '../../context'

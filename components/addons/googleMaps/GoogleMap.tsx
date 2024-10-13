@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Map, useMap } from '@vis.gl/react-google-maps'
 import { GoogleMarkerType, DisplayFieldType } from '../../../types'
 import { MAP_CONFIGS, MapConfig } from './styles/mapConfigs'

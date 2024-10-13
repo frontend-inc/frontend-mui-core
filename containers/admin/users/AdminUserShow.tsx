@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { UserAvatar, ResourceModal, ResourceDetails } from '../../../components'
 import { ResourceShowProps } from '../../../components/cms/resources/ResourceShow'

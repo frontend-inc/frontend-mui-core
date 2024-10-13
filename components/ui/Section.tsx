@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { AuthGuard } from '../../components'
 import { SectionProps } from '../../types'

@@ -1,5 +1,7 @@
 import { is } from 'immutable'
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { mergeFilters, mergeAllFilters, formatFilterArray } from '../../helpers'
 
 type UseFiltersProps = {

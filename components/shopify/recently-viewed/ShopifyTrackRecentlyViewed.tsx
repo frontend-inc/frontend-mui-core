@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useRecentlyViewed } from 'frontend-shopify'
 import { ShopifyProductType } from 'frontend-shopify'

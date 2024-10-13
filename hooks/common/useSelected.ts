@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 
 const useSelected = () => {
 	const [selected, setSelected] = useState<any[]>([])

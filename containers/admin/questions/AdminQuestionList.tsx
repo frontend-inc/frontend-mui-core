@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceList } from '../../../components'
 import { useAdmin } from '../../../hooks'
@@ -6,7 +8,7 @@ import AdminQuestionCreate from './AdminQuestionCreate'
 import AdminQuestionEdit from './AdminQuestionEdit'
 import AdminQuestionShow from './AdminQuestionShow'
 import AdminQuestionToolbar from './AdminQuestionToolbar'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 const AdminQuestionsList: React.FC = () => {
 	const { apiUrl } = useAdmin()

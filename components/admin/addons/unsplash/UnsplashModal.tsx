@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useAlerts } from '../../../../hooks'
 import { Icon, Image, Modal } from '../../../../components'

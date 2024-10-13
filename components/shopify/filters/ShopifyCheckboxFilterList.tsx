@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Checkbox } from '../../../shadcn/ui/checkbox'
 import { Label } from '../../../shadcn/ui/label'

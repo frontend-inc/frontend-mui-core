@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Backdrop } from '../../../tailwind'
 import { X } from 'lucide-react'

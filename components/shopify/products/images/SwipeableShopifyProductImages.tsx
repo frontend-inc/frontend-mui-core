@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { ShopifyProductType } from 'frontend-shopify'
 import SwipeableViews from 'react-swipeable-views'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useBrandfetch, useMedia } from '../../../../hooks'
 import {

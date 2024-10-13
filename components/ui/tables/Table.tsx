@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { TableList, TableToolbar } from '../../../components'
 import { useSelected } from '../../../hooks'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { AuthScreen, Loader } from '../../../components'
 import { useAuth, useCustomers } from 'frontend-shopify'

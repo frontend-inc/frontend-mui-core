@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import { Card, Placeholder } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type CardType = {
 	label?: string

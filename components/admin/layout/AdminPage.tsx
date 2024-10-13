@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import {
 	AdminHeader,
@@ -8,7 +10,7 @@ import {
 } from '../../../components'
 import { AdminMenusType, AdminMenuType } from '../../../types'
 import { useAdmin, useTabs } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { cn } from '../../../shadcn/lib/utils'
 
 export type AdminPageProps = {
@@ -19,8 +21,8 @@ export type AdminPageProps = {
 	menuItems?: AdminMenusType
 	enableEdit?: boolean
 	enableDelete?: boolean
-	handleEdit?: (menuItem: AdminMenuType) => void
-	handleDelete?: (menuItem: AdminMenuType) => void
+	handleEdit: (menuItem: AdminMenuType) => void
+	handleDelete: (menuItem: AdminMenuType) => void
 	disablePadding?: boolean
 	leftPanel?: React.FC
 	children: React.ReactNode
@@ -46,7 +48,7 @@ const AdminPage: React.FC<AdminPageProps> = (props) => {
 
 	useTabs(activeTab)
 
-	const handleClick = (menuItem) => {
+	const handleClick = (menuItem) => {    
 		router.push(`${clientUrl}${menuItem.value}`)
 	}
 

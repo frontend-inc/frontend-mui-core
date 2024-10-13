@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { ShopifyMetafieldType, getMetafieldReference } from 'frontend-shopify'
 import { useProducts } from 'frontend-shopify'
 

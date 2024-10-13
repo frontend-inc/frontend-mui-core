@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Icon, Drawer } from '../../../../components'
 import { TextInputPropsType } from '../../../../types'

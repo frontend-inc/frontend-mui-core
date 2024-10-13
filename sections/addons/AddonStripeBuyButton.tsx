@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Section, StripeBuyButton } from '../../components'
 import { StripeBuyButtonProps } from '../../components/addons/stripe/StripeBuyButton'

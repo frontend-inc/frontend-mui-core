@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { ResetPasswordForm, AuthScreen, Loader } from '../..'
 import { useAuth } from 'frontend-js'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ResetPasswordProps = {
 	title?: string
@@ -16,7 +18,7 @@ type RouterTokenParams = {
 
 const ResetPassword: React.FC<ResetPasswordProps> = (props) => {
 	const router = useRouter()
-	const { token: resetPasswordToken } = router.query as RouterTokenParams
+	const { token: resetPasswordToken } = useParams() as any
 
 	const {
 		title = 'Reset Password',

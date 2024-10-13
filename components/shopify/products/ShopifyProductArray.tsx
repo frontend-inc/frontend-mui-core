@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useProducts } from 'frontend-shopify'
 import { ShopifyProductCard } from '..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useApp } from '../../../hooks'
 
 type ProductArrayProps = {

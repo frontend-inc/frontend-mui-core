@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useContext } from 'react'
 import { useLoadingWrapper } from '..'
 import { BrandfetchContext } from '../../context'

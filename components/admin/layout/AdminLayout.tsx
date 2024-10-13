@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { AdminLayoutTabs, AdminTabIcons } from '../../../components'
 import { cn } from '../../../shadcn/lib/utils'

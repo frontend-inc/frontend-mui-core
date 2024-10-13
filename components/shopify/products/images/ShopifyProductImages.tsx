@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Hidden } from '../../../../tailwind'
 import ShopifyProductImagesSlider from './ShopifyProductImagesSlider'

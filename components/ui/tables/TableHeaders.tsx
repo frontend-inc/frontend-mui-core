@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Checkbox } from '../../../tailwind'
 import { CellHeader, TableCell } from '../../../components'

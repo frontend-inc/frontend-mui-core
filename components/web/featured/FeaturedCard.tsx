@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { useApp } from '../../../hooks'
 import { Button, Typography } from '../../../tailwind'
 import { ExpandableText, Image } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 export type FeaturedCardProps = {
 	label?: string

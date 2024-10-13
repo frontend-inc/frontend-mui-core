@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { AdminContext } from '../../../context'
 import { IconButton } from '../../../tailwind'
@@ -5,7 +7,7 @@ import { Separator } from '../../../shadcn/ui/separator'
 import AdminAuthButton from './AdminAuthButton'
 import AdminTabIcon from './AdminTabIcon'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type AdminTabIconsProps = {
 	logo?: string

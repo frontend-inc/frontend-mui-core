@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Label, UserAvatar, ResourceListItem } from '../../../components'
 import { Typography } from '../../../tailwind'

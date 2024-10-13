@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CarouselImage, TouchableOpacity } from '../../..'
 import { useProductContext } from 'frontend-shopify'

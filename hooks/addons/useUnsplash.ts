@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useContext } from 'react'
 import { UnsplashContext } from '../../context'
 import { useLoadingWrapper } from '../../hooks'

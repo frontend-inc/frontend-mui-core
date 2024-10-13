@@ -1,4 +1,6 @@
-import React, { useContext, useState } from 'react'
+'use client'
+
+import React, { useState, useContext } from 'react'
 import { AppContext } from '../../../context'
 import { useAuth } from 'frontend-js'
 import { Icon, Modal, MyAccountForm } from '../../../components'

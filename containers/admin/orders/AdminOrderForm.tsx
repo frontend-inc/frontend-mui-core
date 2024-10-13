@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceForm, UserAutosuggest } from '../../../components'
 import { ORDER_STATES } from '../../../constants'

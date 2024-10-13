@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { ProductList, ProductCarouselListItems } from '../..'
 import { ProductListProps } from '../products/ProductList'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 export type CollectionProductsCarouselProps = ProductListProps & {
 	productCollectionId: string

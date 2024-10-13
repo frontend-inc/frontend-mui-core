@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ButtonMenu from './ButtonMenu'
 import { ButtonType } from '../../../types'

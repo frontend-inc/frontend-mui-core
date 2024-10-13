@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { FormCard, FormWizardModal } from '../..'
 import { Container } from '../../../tailwind'
 import { useForms, useContacts } from '../../../hooks'

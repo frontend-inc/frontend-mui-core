@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Swipeable, Cover } from '../..'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useResourceContext } from 'frontend-js'
 import { CoverProps } from '../../web/covers/Cover'
 import { cn } from '../../../shadcn/lib/utils'

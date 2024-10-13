@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Textarea } from '../../../shadcn/ui/textarea'
 import { InputLabel, ErrorText } from '../../../components'
 import { InputPropsType } from '../../../types'

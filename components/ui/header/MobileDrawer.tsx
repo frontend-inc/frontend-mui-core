@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { List, Stack, Drawer } from '../../../tailwind'
 import { CartButton, AuthButton } from '../..'

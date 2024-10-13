@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { IconButton, Button } from '../../../tailwind'
 import {
 	AdminHeader,
@@ -7,7 +9,7 @@ import {
 } from '../../../components'
 import { LayoutEmpty, Icon, AlertModal } from '../../../components'
 import { useTabs, useAdmin, useCollections, useViews } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import AdminViewEdit from '../views/AdminViewEdit'
 import { ApiQuery } from 'frontend-js'
 import AdminCollectionTable from './AdminCollectionTable'
@@ -22,7 +24,7 @@ const AdminCollectionPage: React.FC = () => {
 	const apiQuery = new ApiQuery()
 	const router = useRouter()
 	let { collection_id: collectionId, app_id: appId } =
-		router?.query as RouterParams
+		useParams() as any
 	if (collectionId == 'index') collectionId = ''
 
 	const { clientUrl } = useAdmin()
@@ -44,7 +46,7 @@ const AdminCollectionPage: React.FC = () => {
 		useCollections()
 
 	const handleSaveView = async () => {
-		const viewQuery = apiQuery.parseURL(router.query).query()
+		const viewQuery = apiQuery.parseURL(useParams() as any).query()
 		setView({
 			collection_id: collectionId,
 			query: viewQuery,

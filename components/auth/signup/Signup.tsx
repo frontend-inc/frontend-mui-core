@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { AuthScreen, SignupForm } from '../../../components'
 import { useApp } from '../../../hooks'
 import { useAuth } from 'frontend-js'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 export type SignupProps = {
 	href: string

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { VimeoEmbed } from '../..'
 import { ShowProps } from './ShowItem'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image } from '../../../components'
 import { cloudinaryImageFromVideoUrl } from '../../../helpers'

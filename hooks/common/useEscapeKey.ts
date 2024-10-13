@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 
 // Helper hook to run a function on Enter key press

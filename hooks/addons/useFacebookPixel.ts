@@ -1,5 +1,7 @@
+'use client'
+
 import React, { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type FacebookPixelProps = {
 	facebookPixelId: string

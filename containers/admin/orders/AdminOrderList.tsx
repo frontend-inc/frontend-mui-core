@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceList } from '../../../components'
 import { useAdmin } from '../../../hooks'
@@ -5,7 +7,7 @@ import AdminOrderItem from './AdminOrderItem'
 import AdminOrderForm from './AdminOrderForm'
 import AdminOrderShow from './AdminOrderShow'
 import AdminOrderToolbar from './AdminOrderToolbar'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { OrderType } from '../../../types'
 import { ORDER_STATES } from '../../../constants'
 

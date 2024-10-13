@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Stack, Typography, Link } from '../../../tailwind'
 import { TypographyVariantsType } from '../../../types'

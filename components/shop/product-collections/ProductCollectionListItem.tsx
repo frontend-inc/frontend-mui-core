@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { ProductCollectionCard } from '../..'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ProductCollectionListItemProps = {
 	resource: any

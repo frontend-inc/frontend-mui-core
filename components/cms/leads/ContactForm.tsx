@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Container } from '../../../tailwind'
 import { FormFieldType, TypographyVariantsType } from '../../../types'

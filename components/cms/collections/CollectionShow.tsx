@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CommentList, Drawer, ShowItem } from '../..'
 import { useResourceContext } from 'frontend-js'

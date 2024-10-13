@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CartButton, ButtonActions, Icon, AuthButton } from '../..'
 import { ShopifyCartButton } from '../../shopify'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { AttachmentInput } from '../../../components'
 import { AttachmentInputProps } from '../../../types'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ListFilterList from './FilterList'
 import { Hidden } from '../../../tailwind'

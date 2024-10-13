@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SortableList, LoadMore } from '../..'
 import { ResourceListItemsProps } from './ResourceListItems'

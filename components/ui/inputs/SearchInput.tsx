@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce'
 import { SyntheticEventType } from '../../../types'
 import { Search } from 'lucide-react'

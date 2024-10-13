@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceForm } from '../../../components'
 import { ResourceFormProps } from '../../../components/cms/resources/ResourceForm'

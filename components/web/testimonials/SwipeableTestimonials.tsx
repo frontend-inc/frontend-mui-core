@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Swipeable } from '../..'
 import SwipeableTestimonialCard from './SwipeableTestimonialCard'

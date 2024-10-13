@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { AuthScreen, Loader } from '../..'
 import { useAuth } from 'frontend-shopify'
 import ShopifySignInForm from './ShopifySignInForm'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ShopifySignInProps = {
 	redirectUrl: string

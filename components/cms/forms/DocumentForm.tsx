@@ -1,9 +1,11 @@
+'use client'
+
 import React, { useEffect, useContext } from 'react'
 import { useApp } from '../../../hooks'
 import { useResource } from 'frontend-js'
 import { Form } from '../..'
 import { useAlerts } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { Card } from '../../../shadcn/ui/card'
 
 export type DocumentFormProps = {

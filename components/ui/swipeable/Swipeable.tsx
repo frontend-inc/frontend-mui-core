@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import SwipeableViews from 'react-swipeable-views'
 import { Icon } from '../..'

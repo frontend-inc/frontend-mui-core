@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Textarea } from '../../shadcn/ui/textarea'
 import { Label } from '../../shadcn/ui/label'

@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { Button } from '../../../tailwind'
 import { useCart } from '../../../hooks'
 import { useAlerts } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 const CheckoutButton = () => {
 	const { loading, cart, checkout } = useCart()

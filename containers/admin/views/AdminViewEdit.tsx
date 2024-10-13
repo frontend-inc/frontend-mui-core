@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { PrimaryButton, Drawer } from '../../../components'
 import AdminViewForm from './AdminViewForm'

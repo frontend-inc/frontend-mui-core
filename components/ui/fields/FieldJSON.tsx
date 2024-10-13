@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { FieldString } from '../../../components'
 import { FieldElementProps } from './Field'

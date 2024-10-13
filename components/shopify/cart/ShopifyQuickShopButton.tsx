@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { ShopifyProductModal } from '../../../components/shopify'
 import { Button } from '../../../tailwind'

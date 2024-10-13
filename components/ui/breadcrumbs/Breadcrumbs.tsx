@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useApp } from '../../../hooks'
 import { ChevronRight } from 'lucide-react'

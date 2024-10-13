@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Slider as ShadcnSlider } from '../../shadcn/ui/slider'
 import { Label } from '../../shadcn/ui/label'

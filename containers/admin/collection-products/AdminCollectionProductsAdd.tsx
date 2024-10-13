@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import AdminProductListItems from './products/AdminProductListItems'
 import { Drawer } from '../../../components'

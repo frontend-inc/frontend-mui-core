@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Calendly } from '../..'
 import { get } from 'lodash'

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Tabs, TabsList, TabsTrigger } from '../../../shadcn/ui/tabs'
 import { Icon } from '../../../components'

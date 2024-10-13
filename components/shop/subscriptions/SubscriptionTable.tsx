@@ -1,9 +1,11 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useAuth } from 'frontend-js'
 import { Placeholder } from '../..'
 import SubscriptionTableCard from './SubscriptionTableCard'
 import { useSubscriptions, useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { cn } from '../../../shadcn/lib/utils'
 
 export default function SubscriptionTable() {

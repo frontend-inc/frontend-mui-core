@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { AppContext } from '../../context'
 import { useAuth, useResourceContext } from 'frontend-js'

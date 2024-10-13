@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { useStatistics } from '../../../hooks'
 import Statistic from './Statistic'

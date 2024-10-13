@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { UserAvatar } from '../../components'
 import { useAuth } from 'frontend-js'

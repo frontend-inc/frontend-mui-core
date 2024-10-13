@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Grid, Container } from '../../../tailwind'
 import { TestimonialCard } from '../..'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import { Collapse, Typography } from '../../../tailwind'
 import { Button } from '../../../shadcn/ui/button'

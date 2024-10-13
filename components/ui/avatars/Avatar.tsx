@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Avatar, AvatarImage, AvatarFallback } from '../../../shadcn/ui/avatar'
 import { cn } from '../../../shadcn/lib/utils'

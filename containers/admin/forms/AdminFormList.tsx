@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceList } from '../../../components'
 import { useAdmin } from '../../../hooks'
@@ -6,7 +8,7 @@ import AdminFormCreate from './AdminFormCreate'
 import AdminFormEdit from './AdminFormEdit'
 import AdminFormShow from './AdminFormShow'
 import AdminFormToolbar from './AdminFormToolbar'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 const AdminFormsList: React.FC = () => {
 	const router = useRouter()

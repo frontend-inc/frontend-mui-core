@@ -1,4 +1,6 @@
-import { useEffect } from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import { useAuth } from 'frontend-js'
 import { getCookie } from 'cookies-next'
 

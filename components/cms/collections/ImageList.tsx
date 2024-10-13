@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { CollectionList, ShowImageModal, ImageListItems } from '../..'
 import { CollectionListProps } from './CollectionList'

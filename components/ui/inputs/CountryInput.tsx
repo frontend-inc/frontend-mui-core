@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Autosuggest } from '../..'
 import { COUNTRIES } from '../../../constants'

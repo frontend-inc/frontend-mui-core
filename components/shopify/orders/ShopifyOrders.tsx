@@ -1,9 +1,11 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { AuthScreen, Loader } from '../../../components'
 import { useOrders } from 'frontend-shopify'
 import { ShopifyOrderList } from '../../../components/shopify'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { getShopifyIdFromGid } from 'frontend-shopify'
 
 type ShopifyCustomerOrdersProps = {

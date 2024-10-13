@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Drawer, ResourceList } from '../../../components'
 import { useAdmin } from '../../../hooks'

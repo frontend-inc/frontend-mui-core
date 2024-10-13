@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useAlerts } from '../../../hooks'
 import { Modal, SocialIcon } from '../..'

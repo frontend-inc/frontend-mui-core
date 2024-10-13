@@ -10,7 +10,7 @@ import {
 } from '../../../../shadcn/ui/dropdown-menu'
 import { ChevronDown, Loader2 } from 'lucide-react'
 import { cn } from '../../../../shadcn/lib/utils'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { useAdmin } from '../../../../hooks'
 
 type SaveButtonProps = {
@@ -28,7 +28,7 @@ const SaveButton: React.FC<SaveButtonProps> = ({
 }) => {
 	const { clientUrl } = useAdmin()
 	const router = useRouter()
-	const { app_id: appId, collection_id: collectionId } = router?.query
+	const { app_id: appId, collection_id: collectionId } = useParams() as any
 
 	const handleSave = () => {
 		handleSubmit()

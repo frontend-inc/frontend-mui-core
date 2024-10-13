@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Icon, Drawer, IconLoading } from '../../../../components'
 import { Tooltip, Button, IconButton } from '../../../../tailwind'

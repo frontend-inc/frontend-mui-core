@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ResourceForm } from '../../../components'
 import { ZAP_TYPES } from '../../../constants'

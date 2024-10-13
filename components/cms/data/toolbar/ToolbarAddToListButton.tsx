@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { Icon, Modal, RemoteAutosuggest } from '../../..'
 import { Button } from '../../../../tailwind'

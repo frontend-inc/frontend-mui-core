@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { SearchInput } from '../../../components'
 import { IconButton, Hidden } from '../../../tailwind'
 import { Edit, Filter, Trash } from 'lucide-react'

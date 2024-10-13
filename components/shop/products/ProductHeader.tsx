@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { FilterButton, SortButton, SearchInput } from '../..'
 import { SortOptionType, SearchFilterOptionType } from '../../../types'

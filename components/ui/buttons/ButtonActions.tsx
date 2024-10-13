@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ButtonAction from './ButtonAction'
 import { ButtonType } from '../../../types'

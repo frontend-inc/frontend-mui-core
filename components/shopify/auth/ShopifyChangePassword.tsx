@@ -1,9 +1,11 @@
+'use client'
+
 import React from 'react'
 import { AuthScreen, Loader } from '../..'
 import { ShopifyChangePasswordForm } from '..'
 import { useAuth } from 'frontend-shopify'
 import { useAlerts } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ShopifyChangePasswordProps = {
 	title: string

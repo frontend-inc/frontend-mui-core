@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { File as FileIcon } from 'lucide-react'
 import {

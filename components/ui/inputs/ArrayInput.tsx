@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useError } from '../../../hooks'
 import { InputLabel, ErrorText } from '../../../components'

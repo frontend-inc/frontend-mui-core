@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { DisplayFields, Image, Field } from '../../../components'
 import { Typography } from '../../../tailwind'

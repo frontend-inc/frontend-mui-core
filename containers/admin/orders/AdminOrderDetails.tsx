@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { Button } from '../../../tailwind'
 import { Typography } from '../../../tailwind'

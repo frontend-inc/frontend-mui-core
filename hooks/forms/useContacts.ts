@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SyntheticEventType, useResource } from 'frontend-js'
 import { useApp } from '..'

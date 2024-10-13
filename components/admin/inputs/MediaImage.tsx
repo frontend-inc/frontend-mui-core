@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, Icon } from '../../../components'
 import { ImageType } from '../../../types'

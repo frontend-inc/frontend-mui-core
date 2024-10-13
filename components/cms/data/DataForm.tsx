@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Drawer, FormFields, IconLoading } from '../..'
 import { Button } from '../../../tailwind'

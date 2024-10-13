@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import AdminDocumentInput from './AdminDocumentInput'
 import { FieldType, ProductType } from '../../../types'

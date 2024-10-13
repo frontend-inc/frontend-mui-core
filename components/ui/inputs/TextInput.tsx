@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Input } from '../../../shadcn/ui/input'
 import { InputLabel, ErrorText } from '../../../components'
 import { useError } from '../../../hooks'

@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { useAuth } from 'frontend-js'
 import { UserMenu } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type AdminAuthButtonProps = {
 	handleClick: () => void

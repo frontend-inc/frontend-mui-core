@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, FieldWrapper } from '../../../components'
 import { FieldElementProps } from './Field'

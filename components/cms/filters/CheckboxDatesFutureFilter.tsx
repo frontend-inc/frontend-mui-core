@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import CheckboxFilterItem from './CheckboxFilterItem'
 import { FilterOptionType } from '../../../types'

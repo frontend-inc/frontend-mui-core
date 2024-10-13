@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import ProductReviewItem from './ProductReviewItem'
 import { LoadMore, DataLayout } from '../..'

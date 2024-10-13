@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import FormInput from '../FormInput'
 import FormWizardInputWrapper from './FormWizardInputWrapper'

@@ -1,4 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useContext } from 'react'
 import { Button } from '../../../tailwind'
 import { useAuth } from 'frontend-js'
 import { AppContext } from '../../../context'

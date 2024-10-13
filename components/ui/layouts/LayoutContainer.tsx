@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { AuthGuard, Alert } from '../../../components'
 import { Notifications } from '../../../components'

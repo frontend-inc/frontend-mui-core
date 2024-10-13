@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Image, MediaModal } from '../..'
 import { useResourceContext } from 'frontend-js'

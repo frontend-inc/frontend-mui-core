@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { InputLabel } from '../../../components'
 import { SyntheticEventType } from '../../../types'

@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Carousel } from '../..'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import CollectionListItem from './CollectionListItem'
 import { CollectionListItemsProps } from '../collections/CollectionListItems'
 import { useResourceContext } from 'frontend-js'

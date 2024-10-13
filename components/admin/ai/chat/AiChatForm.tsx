@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { Drawer, TextArea } from '../../../../components'
 import { ScrollArea } from '../../../../shadcn/ui/scroll-area'

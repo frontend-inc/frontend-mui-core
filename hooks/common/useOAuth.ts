@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+'use client'
+
+import React, { useEffect, useState } from 'react'
+import { useRouter, useParams } from 'next/navigation'
 
 type UseOAuthProps = {
 	provider: string
@@ -9,7 +11,7 @@ type UseOAuthProps = {
 const useOAuth = (props: UseOAuthProps) => {
 	const { provider, onComplete } = props || {}
 	const router = useRouter()
-	const queryParams = router.query
+	const queryParams = useParams() as any
 
 	// Handle the login once the code is retrieved
 	// Listen for messages from popup window

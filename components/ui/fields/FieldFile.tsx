@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Stack, Link } from '../../../tailwind'
 import { Icon, FieldWrapper } from '../../../components'

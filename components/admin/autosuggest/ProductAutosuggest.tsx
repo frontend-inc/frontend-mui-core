@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { RemoteAutosuggest } from '../..'
 import { QueryParamsType, OptionType } from '../../../types'

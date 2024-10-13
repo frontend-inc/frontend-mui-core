@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { useApi, useResource } from 'frontend-js'
 import { useAdmin } from '../../hooks'

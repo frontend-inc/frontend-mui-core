@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import moment from 'moment'
 import { Calendar } from '../../../shadcn/ui/calendar'
 import {

@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Drawer, FormFields } from '../../../components'
 import { Button } from '../../../tailwind'

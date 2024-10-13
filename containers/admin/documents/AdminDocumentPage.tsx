@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import {
 	AdminHeader,
 	AdminLayoutCenter,
@@ -9,7 +11,7 @@ import { IconButton } from '../../../tailwind'
 import AdminDocumentForm from './AdminDocumentForm'
 import AdminDocumentRightPanel from './AdminDocumentRightPanel'
 import { ChevronLeft } from 'lucide-react'
-import { useRouter } from 'next/router'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { useAdmin, useDocuments, useCollections } from '../../../hooks'
 import { truncate } from '../../../helpers'
 import { ScrollArea } from '../../../shadcn/ui/scroll-area'
@@ -166,12 +168,15 @@ const DocumentEdit: React.FC<DocumentEditProps> = (props) => {
 		}
 	}, [documentId])
 
+
+  const searchParams = useSearchParams() 
+
 	useEffect(() => {
-		if (router?.query) {
+		if (searchParams) {
 			//@ts-ignore
-			setDocumentIds(router.query?.ids?.split(',') || [])
+			setDocumentIds(searchParams?.ids?.split(',') || [])
 		}
-	}, [router?.query])
+	}, [searchParams])
 
 	useEffect(() => {
 		if (collection?.fields) {

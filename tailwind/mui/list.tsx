@@ -1,3 +1,5 @@
+'use client'
+
 import React, { forwardRef } from 'react'
 import { Typography } from './typography'
 import { cn } from '../../shadcn/lib/utils'

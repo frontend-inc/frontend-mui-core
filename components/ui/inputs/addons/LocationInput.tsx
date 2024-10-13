@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState, useRef } from 'react'
 import { useGooglePlaces } from '../../../../hooks'
 import { TextInput, GoogleMap, Icon } from '../../..'

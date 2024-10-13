@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Collapse, IconButton } from '../../../../tailwind'
 import { Icon } from '../../..'

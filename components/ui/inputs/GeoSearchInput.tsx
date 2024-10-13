@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { useDebounce } from 'use-debounce'
 import { SyntheticEventType } from '../../../types'
 import { Icon } from '../..'

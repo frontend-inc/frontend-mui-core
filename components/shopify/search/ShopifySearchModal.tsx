@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useContext, useState } from 'react'
 import { SearchInput, Placeholder } from '../../../components'
 import { ShopifyProducts } from '../../../components/shopify'

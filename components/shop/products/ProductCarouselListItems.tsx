@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Carousel } from '../..'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import ProductListItem from './ProductListItem'
 import { ProductListItemsProps } from '../products/ProductListItems'
 import { useResourceContext } from 'frontend-js'

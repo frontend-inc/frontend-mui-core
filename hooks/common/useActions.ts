@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 import { useApp } from '..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { ActionType, UserType } from '../../types'
 import { useLoadingWrapper } from '.'
 import copy from 'copy-to-clipboard'

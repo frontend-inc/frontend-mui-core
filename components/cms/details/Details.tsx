@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Field } from '../..'
 import { DisplayFieldType } from '../../../types'

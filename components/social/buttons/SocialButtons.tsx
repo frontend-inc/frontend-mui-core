@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { cn } from '../../../shadcn/lib/utils'
 import {
@@ -8,7 +10,7 @@ import {
 	ProductLikeButton,
 	ProductFavoriteButton,
 } from '../../../components'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type SocialButtonsProps = {
 	resource: any

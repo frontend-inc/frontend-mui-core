@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Container, Stack, Typography } from '../../../tailwind'
 import { Image } from '../..'

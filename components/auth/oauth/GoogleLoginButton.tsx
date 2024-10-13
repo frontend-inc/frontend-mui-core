@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { Button } from '../../../tailwind'
 import { useGoogleLogin } from '@react-oauth/google'
 import { useAuth } from 'frontend-js'

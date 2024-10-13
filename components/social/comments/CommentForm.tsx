@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { Button } from '../../../shadcn/ui/button'
 import { AuthGuard, IconLoading, TextInput } from '../../../components'

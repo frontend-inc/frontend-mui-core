@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react'
 import { LoadMore } from '../..'
 import { useResourceContext } from 'frontend-js'
 import { useApp } from '../../../hooks'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 import { ProductListItem, DataLayout } from '../..'
 import { useCollectionForms } from '../../../hooks'
 import { ButtonType, DisplayFieldType } from '../../../types'

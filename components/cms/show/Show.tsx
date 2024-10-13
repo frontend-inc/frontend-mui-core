@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { ShowItem } from '../..'
 import { ShowItemProps } from './ShowItem'

@@ -1,8 +1,10 @@
-import React, { useContext, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useContext } from 'react'
 import { AuthScreen, Loader } from '../..'
 import { useOrders } from 'frontend-shopify'
 import { ShopifyOrderDetails } from '..'
-import { useRouter } from 'next/router'
+import { useParams } from 'next/navigation'
 import moment from 'moment'
 
 type ShopifyOrderRouterParams = {
@@ -15,8 +17,8 @@ type ShopifyCustomerOrderProps = {
 }
 
 const ShopifyCustomerOrder: React.FC<ShopifyCustomerOrderProps> = (props) => {
-	const router = useRouter()
-	let { order_id: orderId } = router?.query as ShopifyOrderRouterParams
+	
+  let { order_id: orderId } = useParams() as any
 
 	if (orderId == 'new') {
 		orderId = null

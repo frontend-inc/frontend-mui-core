@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { SyntheticEventType, AnswerType } from '../../../../types'
 import MultipleChoiceInput from './MultipleChoiceAnswerInput'

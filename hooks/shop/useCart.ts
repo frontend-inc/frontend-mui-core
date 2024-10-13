@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import { useApi } from 'frontend-js'
 import { useShop } from '../../hooks'
 import { getCookie, setCookie } from 'cookies-next'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useContext } from 'react'
 import { IconButton } from '../../../tailwind'
 import { ShopifyContext } from 'frontend-shopify'

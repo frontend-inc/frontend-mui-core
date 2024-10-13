@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
 import { Button } from '../../../tailwind'
 import { Icon } from '../..'
-import { useRouter } from 'next/router'
+import { useRouter, useParams } from 'next/navigation'
 
 type ActionProps = {
 	icon?: string

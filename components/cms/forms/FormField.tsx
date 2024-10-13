@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import { FormFieldType, SyntheticEventType } from '../../../types'
 import FormInput from './FormInput'
