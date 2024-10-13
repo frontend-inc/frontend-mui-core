@@ -32,7 +32,7 @@ export default function CellHeader({
 			variant="ghost"
 			className={cn(
 				'w-full h-11 rounded-none flex justify-between items-center px-2',
-				'hover:bg-white/10 hover:text-foreground'
+				'hover:bg-muted hover:text-foreground'
 			)}
 			onClick={() => handleSort(field)}
 		>

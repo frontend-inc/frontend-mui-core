@@ -25,7 +25,7 @@ export default function SidebarMenuHeader({
 		<div className={cn('w-full p-1', enableBorder && 'border-t border-border')}>
 			<Button
 				variant="ghost"
-				className="py-6 w-full justify-between px-3"
+				className="hover:bg-muted py-6 w-full justify-between px-3"
 				onClick={() => setOpen(!open)}
 			>
 				<Typography variant="body2">{label}</Typography>
