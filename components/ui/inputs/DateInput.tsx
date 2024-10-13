@@ -10,6 +10,7 @@ import { Button } from '../../../shadcn/ui/button'
 import { cn } from '../../../shadcn/lib/utils'
 import { CalendarIcon } from 'lucide-react'
 import { InputLabel } from '../../../components'
+import { SyntheticEventType } from '../../../types'
 
 type DateInputProps = {
 	errors?: any
