@@ -22,7 +22,7 @@ const AiButton: React.FC<AiButtonProps> = ({
 
 	return (
 		<>
-			<IconButton variant="secondary" onClick={() => setOpen(true)}>
+			<IconButton onClick={() => setOpen(true)}>
 				<Sparkle className="w-5 h-5" />
 			</IconButton>
 			<AlertModal

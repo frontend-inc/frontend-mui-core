@@ -10,7 +10,7 @@ export type SyntheticEventType = React.ChangeEvent<HTMLInputElement>
 
 export type OptionType = {
 	label: string
-	value: string | number | boolean | null
+	value: string
 	icon?: string
 	image?: string
 }

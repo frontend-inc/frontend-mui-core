@@ -9,7 +9,7 @@ const GorgiasContactForm: React.FC<GorgiasContactFormProps> = (props) => {
 	if (!src) return null
 	return (
 		<div>
-			<iframe src={src} style={sx.root} />
+			<iframe src={src} />
 		</div>
 	)
 }

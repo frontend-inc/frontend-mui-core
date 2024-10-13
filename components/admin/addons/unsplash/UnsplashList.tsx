@@ -4,7 +4,7 @@ import { SearchInput } from '../../../../components'
 import UnsplashCard from './UnsplashCard'
 import UnsplashModal from './UnsplashModal'
 import PoweredByUnsplash from './PoweredByUnsplash'
-import { UnsplashImageType } from '../../../../types'
+import { SyntheticEventType, UnsplashImageType } from '../../../../types'
 import { Button } from '../../../../shadcn/ui/button'
 import { ChevronDown } from 'lucide-react'
 
@@ -30,11 +30,12 @@ const UnsplashList: React.FC<UnsplashProps> = ({ onComplete }) => {
 			console.error('Error uploading image:', e)
 		} finally {
 			setShowModal(false)
+      //@ts-ignore
 			setImage({})
 		}
 	}
 
-	const handleChange = (ev: React.ChangeEvent<HTMLInputElement>) => {
+	const handleChange = (ev: SyntheticEventType) => {
 		setKeywords(ev.target.value)
 	}
 
