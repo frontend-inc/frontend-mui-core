@@ -1,5 +1,5 @@
 import React from 'react'
-import { Checkbox, Box } from '../../../tailwind'
+import { Checkbox } from '../../../tailwind'
 import { CellHeader, TableCell } from '../../../components'
 import { TableRow } from '../../../shadcn/ui/table'
 

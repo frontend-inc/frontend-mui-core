@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Box } from '../../../tailwind'
+import { Stack } from '../../../tailwind'
 import { ButtonType } from '../../../types'
 import { Heading, ButtonActions, Breadcrumbs } from '../../../components'
 

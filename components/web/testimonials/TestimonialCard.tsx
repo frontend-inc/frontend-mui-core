@@ -1,5 +1,5 @@
 import React from 'react'
-import { Avatar, Box, Stack, Typography } from '../../../tailwind'
+import { Avatar, Stack, Typography } from '../../../tailwind'
 import { ExpandableText } from '../../../components'
 
 type TestimonialProps = {

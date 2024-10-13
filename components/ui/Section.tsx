@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container, Box } from '../../tailwind'
 import { AuthGuard } from '../../components'
 import { SectionProps } from '../../types'
 import { cn } from '../../shadcn/lib/utils'

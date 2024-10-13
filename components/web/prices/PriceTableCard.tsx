@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import {
 	Stack,
-	Box,
 	Button,
 	Divider,
 	Typography,
@@ -9,19 +8,17 @@ import {
 	ListItem,
 	ListItemText,
 } from '../../../tailwind'
-import { PriceType } from '../../../types'
 import { useRouter } from 'next/router'
 import { Label } from '../..'
-import { useAuth } from 'frontend-js'
 import { AppContext } from '../../../context'
 import { formatCurrency } from 'frontend-shopify'
 
 type PriceCardProps = {
 	label?: string
-	title: string
+	title: string  
 	description?: string
 	features?: string[]
-	price: string
+	price: string | number   
 	buttonText?: string
 	url?: string
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Button, Typography, Box, IconButton } from '../../../tailwind'
+import { Button, Typography, IconButton } from '../../../tailwind'
 import { useMenu, useApp } from '../../../hooks'
 import { useAuth } from 'frontend-js'
 import { useRouter } from 'next/router'

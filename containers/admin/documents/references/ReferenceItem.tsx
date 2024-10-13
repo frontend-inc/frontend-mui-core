@@ -44,7 +44,7 @@ const SortableReferenceItem: React.FC<SortableReferenceItemProps> = ({
 			<div className="flex-grow">
 				<div className="flex justify-between items-center px-2">
 					<div className="flex-grow">
-						<Label color="bg-background" label={target?.content_type} />
+						<Label label={target?.content_type} />
 					</div>
 					<div className="flex items-center">
 						<PublishLabel published={target?.published} />

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { List, Stack, Box, Drawer } from '../../../tailwind'
+import { List, Stack, Drawer } from '../../../tailwind'
 import { CartButton, AuthButton } from '../..'
 import { ShopifyCartButton } from '../../shopify'
 import { AppContext } from '../../../context'

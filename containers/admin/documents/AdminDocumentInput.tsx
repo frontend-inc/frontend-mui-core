@@ -14,10 +14,8 @@ import {
 } from '../../../components'
 import ReferenceInput from './references/ReferenceInput'
 import ProductsInput from './products/ProductsInput'
-import InputWrapper from './inputs/InputWrapper'
 import { MediaInput, AiChatModal } from '../../../components'
 import { ProductType } from '../../../types'
-import { Tooltip } from '@/shadcn/ui/tooltip'
 
 type DocumentInputProps = {
 	errors?: any
