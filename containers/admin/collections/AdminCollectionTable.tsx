@@ -8,7 +8,7 @@ import { Table } from '../../../components'
 import { ImageModal, AdminVideoModal } from '../../../components'
 import { TableFilterDrawer } from '../../../components'
 import AdminToolbarMenu from './AdminToolbarMenu'
-import { useRouter, useParams, usePathname } from 'next/navigation'
+import { useRouter, useParams, usePathname, useSearchParams } from 'next/navigation'
 import copy from 'copy-to-clipboard'
 import { USER_FIELD, ID_FIELD, PUBLISHED_FIELD } from '../../../constants'
 import { ApiQuery } from 'frontend-js'
@@ -257,15 +257,15 @@ const AdminCollectionTable: React.FC<AdminCollectionTableProps> = (props) => {
 		}
 	}, [fields])
 
-  const pathname = usePathname()
+  const searchParams = useSearchParams()
 
 	useEffect(() => {
-		if (pathname) {
-			let parsedQuery = apiQuery.parseURL(pathname).query()
+		if (searchParams) {
+			let parsedQuery = apiQuery.parseURL(searchParams).query()
 			//@ts-ignore
 			findDocuments(parsedQuery)
 		}
-	}, [pathname])
+	}, [searchParams])
 
 	return (
 		<div>

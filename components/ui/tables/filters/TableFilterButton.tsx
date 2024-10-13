@@ -7,7 +7,7 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-} from '@/shadcn/ui/popover'
+} from '../../../../shadcn/ui/popover'
 import TableFilterForm from './TableFilterForm'
 import { ListFilter } from 'lucide-react'
 import { SyntheticEventType } from '../../../../types'

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
-import { useRouter, useParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import TiktokPixel from 'tiktok-pixel'
 
 type TiktokPixelProps = {
@@ -11,7 +11,7 @@ type TiktokPixelProps = {
 // Implementation of the Tiktok Pixel
 // https://www.npmjs.com/package/tiktok-pixel
 const useTiktok = (props: TiktokPixelProps) => {
-	const router = useRouter()
+	const pathname = usePathname()
 
 	const { tikTokPixelId } = props || {}
 
@@ -25,7 +25,7 @@ const useTiktok = (props: TiktokPixelProps) => {
 		if (tikTokPixelId) {
 			TiktokPixel.pageView()
 		}
-	}, [tikTokPixelId, router?.pathname])
+	}, [tikTokPixelId, pathname])
 
 	const trackAddToCart = (data) => {
 		TiktokPixel.track('AddToCart', data)

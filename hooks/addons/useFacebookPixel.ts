@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
-import { useRouter, useParams } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 
 type FacebookPixelProps = {
 	facebookPixelId: string
@@ -10,12 +10,12 @@ type FacebookPixelProps = {
 const useFacebookPixel = (props: FacebookPixelProps) => {
 	const { facebookPixelId } = props || {}
 
-	const router = useRouter()
-
 	const options = {
 		autoConfig: true,
 		debug: false,
 	}
+
+  const pathname = usePathname()
 
 	useEffect(() => {
 		const trackFbPageView = async () => {
@@ -27,7 +27,7 @@ const useFacebookPixel = (props: FacebookPixelProps) => {
 			trackFbPageView()
 		}
 		return () => {}
-	}, [facebookPixelId, router?.pathname])
+	}, [facebookPixelId, pathname])
 }
 
 export default useFacebookPixel

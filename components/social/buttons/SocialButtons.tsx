@@ -10,7 +10,7 @@ import {
 	ProductLikeButton,
 	ProductFavoriteButton,
 } from '../../../components'
-import { useRouter, useParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 type SocialButtonsProps = {
 	resource: any
@@ -43,8 +43,7 @@ const SocialButtons: React.FC<SocialButtonsProps> = (props) => {
 		color,
 	} = props
 
-	const router = useRouter()
-	const currentPageUrl = router.asPath
+	const currentPageUrl = usePathname()
 
 	if (
 		!enableLikes &&
