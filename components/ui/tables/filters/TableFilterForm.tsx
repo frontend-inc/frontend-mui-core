@@ -3,14 +3,11 @@
 import React, { useState, useEffect } from 'react'
 import { Plus, Search, FilterIcon, Loader } from 'lucide-react'
 import { FILTERABLE_TYPES, SORTABLE_TYPES } from '../../../../constants/index'
-import { OptionType } from '../../../../types'
 import { Button } from '../../../../shadcn/ui/button'
-import { Badge } from '../../../../shadcn/ui/badge'
-
-// Updated import paths
 import { TableFilterInputs } from '../../../../components'
 import { TableFilterKeywordsInput } from '../../../../components'
 import { TableFilterSortInput } from '../../../../components'
+import { SyntheticEventType } from '../../../../types'
 
 type TableFilterFormProps = {
 	loading: boolean
@@ -41,7 +38,7 @@ export default function TableFilterForm({
 	}
 
 	const handleFilterChange = (
-		ev: React.ChangeEvent<HTMLInputElement>,
+		ev: SyntheticEventType,
 		index: number
 	) => {
 		const { name, value } = ev.target
@@ -118,18 +115,28 @@ export default function TableFilterForm({
 	}, [fields])
 
 	useEffect(() => {
-		if (query?.filters) {
-			const formattedFilters = Object.entries(query.filters).flatMap(
-				([where, filters]) =>
-					(filters as any[]).map((filter) => {
-						const [field] = Object.keys(filter)
-						const [operator] = Object.keys(filter[field])
-						return { where, field, operator, value: filter[field][operator] }
-					})
-			)
-			setActiveFilters(formattedFilters)
-		}
-	}, [query])
+    if (query && query.filters) {
+      // Use Object.keys to iterate over query.filters
+      const formattedFilters = Object.keys(query.filters)
+        .map(where => {
+          const filters = query.filters[where];
+  
+          // Use map to iterate over filters and format them
+          return filters.map(filter => {
+            const field = Object.keys(filter)[0];
+            const operator = Object.keys(filter[field])[0];
+            const value = filter[field][operator];
+  
+            return { where, field, operator, value };
+          });
+        })
+        // Use reduce to flatten the resulting arrays
+        .reduce((acc, curr) => acc.concat(curr), []);
+  
+      // Set active filters
+      setActiveFilters(formattedFilters);
+    }
+  }, [query]);
 
 	return (
 		<div className="space-y-2">

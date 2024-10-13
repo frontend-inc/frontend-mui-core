@@ -1,7 +1,7 @@
 import React from 'react'
 import { Checkbox } from '../../../shadcn/ui/checkbox'
 import { InputLabel } from '../../../components'
-import { OptionType } from '../../../types'
+import { OptionType, SyntheticEventType } from '../../../types'
 import { cn } from '../../../shadcn/lib/utils'
 
 type CheckboxGroupInputProps = {
@@ -11,7 +11,7 @@ type CheckboxGroupInputProps = {
 	value?: string[]
 	options: OptionType[]
 	info?: string
-	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+	handleChange: (e: SyntheticEventType) => void
 }
 
 export default function CheckboxGroupInput({

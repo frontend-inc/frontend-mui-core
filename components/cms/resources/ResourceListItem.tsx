@@ -26,6 +26,7 @@ export type ResourceListItemProps = {
 	handleEdit?: (resource: any) => void
 	handleDelete?: (resource: any) => void
 	handleSelect?: () => void
+  handleReload?: () => void
 	secondaryAction?: React.ReactNode
 	menuActions?: React.ReactNode
 	sortable?: boolean

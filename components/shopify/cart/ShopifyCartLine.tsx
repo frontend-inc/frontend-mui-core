@@ -113,7 +113,7 @@ const ShopifyCartLine: React.FC<ShopifyCartLineProps> = ({ line }) => {
 				sellingPlanAllocation.priceAdjustments[0].compareAtPrice.amount
 			)
 		} else {
-			setPrice(amount)
+			setPrice(Number(amount))
 			setCompareAtPrice(compareAtAmount?.amount)
 		}
 	}, [price, sellingPlanAllocation])

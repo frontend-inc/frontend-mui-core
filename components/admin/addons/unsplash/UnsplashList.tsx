@@ -15,7 +15,7 @@ type UnsplashProps = {
 const UnsplashList: React.FC<UnsplashProps> = ({ onComplete }) => {
 	const [showModal, setShowModal] = useState(false)
 	const [keywords, setKeywords] = useState('')
-	const [image, setImage] = useState<UnsplashImageType | {}>({})
+	const [image, setImage] = useState<UnsplashImageType>()
 
 	const { loading, uploadFromUrl } = useMedia()
 	const { images, search, loadMore } = useUnsplash()
@@ -84,6 +84,7 @@ const UnsplashList: React.FC<UnsplashProps> = ({ onComplete }) => {
 			<UnsplashModal
 				loading={loading}
 				open={showModal}
+        //@ts-ignore
 				image={image}
 				handleClose={() => setShowModal(false)}
 				handleUpload={handleUpload}

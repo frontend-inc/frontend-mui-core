@@ -55,8 +55,7 @@ const ShopifyRegisterForm: React.FC<ShopifyRegisterFormProps> = (props) => {
 				handleChange={handleChange}
 			/>
 			<Button
-				className="w-full"
-				variant="default"
+				className="w-full"				
 				onClick={handleSubmit}
 				disabled={loading}
 			>

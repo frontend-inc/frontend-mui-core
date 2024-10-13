@@ -38,11 +38,9 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 		displayField,
 		imageField,
 		handleChange,
-		handleClear,
 		valueParam = 'id',
 		placeholder = 'Search',
 		defaultQuery = {},
-		direction = 'column',
 		defaultOptions = [],
 		enableRemoteSearch = false,
 		enableClear = false,
@@ -54,7 +52,7 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 		name: name,
 	})
 
-	const { loading, delayedLoading, resources, findOne, findMany } = useResource(
+	const { loading, resources, findOne, findMany } = useResource(
 		{
 			url: url,
 			name: name,
@@ -129,7 +127,6 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 			placeholder={placeholder}
 			handleChange={handleChange}
 			handleInputChange={handleInputChange}
-			handleClear={handleClear}
 			enableClear={enableClear}
 		/>
 	)
