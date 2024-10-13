@@ -63,9 +63,8 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 			<div className="flex flex-row justify-start items-start">
 				<div>
 					<TabsInput            
-						name="where"
-            //@ts-ignore
-						options={WHERE_OPTIONS}
+						name="where"            
+						options={BOOLEAN_OPTIONS}
             value={filter?.where || 'AND'}
 						handleChange={(ev) => handleChange(ev, index)}
 					/>
@@ -92,7 +91,6 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 							<SelectInput
 								name="value"
 								placeholder="true or false"
-                //@ts-ignore
 								options={BOOLEAN_OPTIONS}
 								value={filter?.value || ''}
 								handleChange={(ev) => handleChange(ev, index)}
@@ -105,7 +103,6 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 									<SelectInput
 										name="value"
 										placeholder="date since"
-                    //@ts-ignore
 										options={DATE_RANGE_OPTIONS}
 										value={filter?.value || ''}
 										handleChange={(ev) => handleChange(ev, index)}

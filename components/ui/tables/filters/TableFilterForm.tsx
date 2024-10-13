@@ -80,6 +80,8 @@ export default function TableFilterForm({
 			filters,
 		}
 
+    console.log('searchQuery', filters);
+
 		handleSearch(searchQuery)
 	}
 
@@ -120,7 +122,6 @@ export default function TableFilterForm({
       const formattedFilters = Object.keys(query.filters)
         .map(where => {
           const filters = query.filters[where];
-  
           // Use map to iterate over filters and format them
           return filters.map(filter => {
             const field = Object.keys(filter)[0];
@@ -137,6 +138,10 @@ export default function TableFilterForm({
       setActiveFilters(formattedFilters);
     }
   }, [query]);
+
+  useEffect(() => {
+    console.log('activeFilters', activeFilters, query);
+  }, [activeFilters]);
 
 	return (
 		<div className="space-y-2">

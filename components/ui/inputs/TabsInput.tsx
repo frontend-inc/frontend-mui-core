@@ -25,11 +25,12 @@ export default function TabsInput({
 	value,
 	info,
 }: TabsInputProps) {
+  
 	const handleInputChange = (value: string) => {
 		handleChange({
 			target: {
 				name,
-				value: parseInt(value, 10),
+				value
 			},
 		})
 	}
