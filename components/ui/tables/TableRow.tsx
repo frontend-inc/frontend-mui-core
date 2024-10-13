@@ -1,6 +1,6 @@
 import React from 'react'
 import { Cell, TableCell } from '../../../components'
-import { Stack, Button, Checkbox } from '../../../tailwind'
+import { Button, Checkbox } from '../../../tailwind'
 import { get } from 'lodash'
 import { TableRow as ShadcnTableRow } from '../../../shadcn/ui/table'
 

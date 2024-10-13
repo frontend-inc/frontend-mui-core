@@ -43,7 +43,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
 				/>
 				{buttons?.length > 0 && (
 					<div className="flex items-start justify-end sm:pb-0 xs:pb-1">
-						<ButtonActions buttons={buttons} resource={resource} />
+						<ButtonActions buttons={buttons} />
 					</div>
 				)}
 			</Stack>

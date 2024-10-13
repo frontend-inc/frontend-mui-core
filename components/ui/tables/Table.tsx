@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { TableList, TableToolbar, TableFilterPopup } from '../../../components'
+import { TableList, TableToolbar } from '../../../components'
 import { useSelected } from '../../../hooks'
 
 type TableProps = {
@@ -12,11 +12,11 @@ type TableProps = {
 	enableEdit?: boolean
 	enableDelete?: boolean
 	handleClick: (value: any, row: any, field: any) => void
-	handleEdit?: (row: any) => void
-	handleEditSelected?: (items: any[]) => void
-	handleDelete?: (items: any[]) => void
-	handlePublish?: (items: any[]) => void
-	handleUnpublish?: (items: any[]) => void
+	handleEdit: (row: any) => void
+	handleEditSelected: (items: any[]) => void
+	handleDelete: (items: any[]) => void
+	handlePublish: (items: any[]) => void
+	handleUnpublish: (items: any[]) => void
 	secondaryActions?: React.ReactNode
 	page?: number
 	perPage?: number
@@ -36,7 +36,6 @@ type TableProps = {
 }
 
 const Table: React.FC<TableProps> = (props) => {
-	const [showFilters, setShowFilters] = useState(false)
 
 	const {
 		loading,
@@ -84,13 +83,6 @@ const Table: React.FC<TableProps> = (props) => {
 	const { selected, selectedIds, setSelected, setSelectedIds, handleSelect } =
 		useSelected()
 
-	const [anchorEl, setAnchorEl] = useState(null)
-
-	const handleFilterClick = (ev) => {
-		setAnchorEl(ev.currentTarget)
-		setShowFilters(true)
-	}
-
 	const handleSelectAll = () => {
 		if (selected?.length === rows?.length) {
 			setSelected([])
@@ -102,65 +94,51 @@ const Table: React.FC<TableProps> = (props) => {
 	}
 
 	return (
-		<>
-			<TableList
-				loading={loading}
-				disableBorderRadius={disableBorderRadius}
-				query={query}
-				toolbar={
-					<TableToolbar
-						loading={loading}
-						query={query}
-						selected={selected}
-						handleKeywordSearch={handleKeywordSearch}
-						handleKeywordChange={handleKeywordChange}
-						handleFilter={handleFilterClick}
-						handleClearQuery={handleClearQuery}
-						enableEdit={enableEdit}
-						enableDelete={enableDelete}
-						handleDelete={handleDelete}
-						handleEdit={handleEditSelected}
-						handlePublish={handlePublish}
-						handleUnpublish={handleUnpublish}
-						secondaryActions={secondaryActions}
-						fields={headers}
-						handleSearch={handleSearch}
-						handleChange={handleQueryChange}
-						handleClearFilters={handleClearQuery}
-					/>
-				}
-				headers={headers}
-				resources={rows}
-				enableEdit={enableEdit}
-				enableSelect={enableSelect}
-				selected={selected}
-				selectedIds={selectedIds}
-				handleClick={handleClick}
-				handleEdit={handleEdit}
-				handleSelect={handleSelect}
-				handleSort={handleSort}
-				handleSelectAll={handleSelectAll}
-				page={page}
-				perPage={perPage}
-				numPages={numPages}
-				totalCount={totalCount}
-				handlePaginate={handlePaginate}
-				emptyIcon={emptyIcon}
-				emptyTitle={emptyTitle}
-				emptyDescription={emptyDescription}
-			/>
-			<TableFilterPopup
-				loading={loading}
-				open={showFilters}
-				anchorEl={anchorEl}
-				query={query}
-				handleClose={() => setShowFilters(false)}
-				fields={headers}
-				handleSearch={handleSearch}
-				handleChange={handleQueryChange}
-				handleClearFilters={handleClearQuery}
-			/>
-		</>
+    <TableList
+      loading={loading}
+      disableBorderRadius={disableBorderRadius}
+      query={query}
+      toolbar={
+        <TableToolbar
+          loading={loading}
+          query={query}
+          selected={selected}
+          handleKeywordSearch={handleKeywordSearch}
+          handleKeywordChange={handleKeywordChange}
+          handleClearQuery={handleClearQuery}
+          enableEdit={enableEdit}
+          enableDelete={enableDelete}
+          handleDelete={handleDelete}
+          handleEdit={handleEditSelected}
+          handlePublish={handlePublish}
+          handleUnpublish={handleUnpublish}
+          secondaryActions={secondaryActions}
+          fields={headers}
+          handleSearch={handleSearch}
+          handleChange={handleQueryChange}
+          handleClearFilters={handleClearQuery}
+        />
+      }
+      headers={headers}
+      resources={rows}
+      enableEdit={enableEdit}
+      enableSelect={enableSelect}
+      selected={selected}
+      selectedIds={selectedIds}
+      handleClick={handleClick}
+      handleEdit={handleEdit}
+      handleSelect={handleSelect}
+      handleSort={handleSort}
+      handleSelectAll={handleSelectAll}
+      page={page}
+      perPage={perPage}
+      numPages={numPages}
+      totalCount={totalCount}
+      handlePaginate={handlePaginate}
+      emptyIcon={emptyIcon}
+      emptyTitle={emptyTitle}
+      emptyDescription={emptyDescription}
+    />				
 	)
 }
 

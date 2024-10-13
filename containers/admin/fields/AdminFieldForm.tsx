@@ -12,7 +12,7 @@ import AdminFieldVariantListItem from './AdminFieldVariantListItem'
 import { FIELD_VARIANTS } from '../../../constants'
 
 const AdminFieldForm: React.FC<ResourceFormProps> = (props) => {
-	const {
+const {
 		loading,
 		errors,
 		open,
@@ -33,12 +33,12 @@ const AdminFieldForm: React.FC<ResourceFormProps> = (props) => {
 		setTab(1)
 	}
 
-	const [tab, setTab] = useState<any>(0)
+	const [tab, setTab] = useState<any>('field')
 
 	const TABS = [
-		{ label: 'Field', value: 0 },
-		{ label: 'Settings', value: 1 },
-		{ label: 'Validate', value: 2 },
+		{ label: 'Field', value: 'field' },
+		{ label: 'Settings', value: 'settings' },
+		{ label: 'Validate', value: 'validate' },
 	]
 
 	return (
@@ -68,11 +68,11 @@ const AdminFieldForm: React.FC<ResourceFormProps> = (props) => {
 					handleChange={setTab}
 				/>
 			</div>
-			{tab == 0 && (
+			{tab == 'field' && (
 				<AdminFieldVariantList field={resource} handleClick={handleClick} />
 			)}
 			<div>
-				{tab == 1 && (
+				{tab == 'settings' && (
 					<div className="px-2">
 						{resource?.variant && (
 							<AdminFieldVariantListItem
@@ -136,7 +136,7 @@ const AdminFieldForm: React.FC<ResourceFormProps> = (props) => {
 					</div>
 				)}
 				<div className="px-2">
-					{tab == 2 && (
+					{tab == 'validate' && (
 						<FormFields
 							errors={errors}
 							resource={resource}

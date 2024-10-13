@@ -9,7 +9,7 @@ import { cn } from '../../../shadcn/lib/utils'
 
 export interface ResponsiveImageProps {
 	src: string
-	alt: string
+	alt?: string
 	width?: number
 	height?: number
 	objectFit?: 'cover' | 'contain'

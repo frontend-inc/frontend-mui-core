@@ -19,7 +19,10 @@ export type RemoteAutosuggestProps = {
 	imageField?: string
 	direction?: 'row' | 'column'
 	defaultQuery?: QueryParamsType
-	defaultOptions?: OptionType[]
+	defaultOptions?: {
+    label: string 
+    value: string 
+  }[]
 	enableRemoteSearch?: boolean
 	enableClear?: boolean
 	perPage?: number

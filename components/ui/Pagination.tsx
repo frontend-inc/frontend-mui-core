@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../shadcn/ui/button'
 import {
 	PaginationContent,
 	PaginationItem,

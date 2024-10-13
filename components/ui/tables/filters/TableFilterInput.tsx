@@ -33,7 +33,10 @@ type FieldOption = FilterOptionType & {
 type FilterFieldProps = {
 	index: number
 	filter: FilterOptionType
-	fieldOptions: FieldOption[]
+	fieldOptions: {
+    label: string 
+    value: string 
+  }[]
 	handleChange: (e: SyntheticEventType, index: number) => void
 	handleRemove: (index: number) => void
 }
@@ -46,10 +49,11 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 	handleRemove,
 }) => {
 	let field
-	let operatorOptions: OptionType[] = []
+	let operatorOptions: { value: string, label: string }[] = []
 
 	if (filter.field) {
 		field = fieldOptions.find((f) => f.value == filter.field)
+    //@ts-ignore
 		operatorOptions = FILTER_OPERATORS[field?.db_type || 'integer']
 	}
 
@@ -61,6 +65,7 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 					<TabsInput
 						direction="column"
 						name="where"
+            //@ts-ignore
 						options={WHERE_OPTIONS}
 						placeholder="where"
 						value={filter?.where || 'AND'}
@@ -89,6 +94,7 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 							<SelectInput
 								name="value"
 								placeholder="true or false"
+                //@ts-ignore
 								options={BOOLEAN_OPTIONS}
 								value={filter?.value || ''}
 								handleChange={(ev) => handleChange(ev, index)}
@@ -101,6 +107,7 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 									<SelectInput
 										name="value"
 										placeholder="date since"
+                    //@ts-ignore
 										options={DATE_RANGE_OPTIONS}
 										value={filter?.value || ''}
 										handleChange={(ev) => handleChange(ev, index)}

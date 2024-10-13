@@ -30,7 +30,7 @@ export default function TableFilterForm({
 	handleClearFilters,
 }: TableFilterFormProps) {
 	const [filterOptions, setFilterOptions] = useState<Record<string, any>[]>([])
-	const [sortOptions, setSortOptions] = useState<OptionType[]>([])
+	const [sortOptions, setSortOptions] = useState<{ label: string, value: string }[]>([])
 	const [activeFilters, setActiveFilters] = useState<Record<string, any>[]>([])
 
 	const defaultFilter = {

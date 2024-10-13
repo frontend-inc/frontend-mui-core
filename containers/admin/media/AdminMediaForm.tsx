@@ -7,8 +7,8 @@ import { UnsplashList } from '../../../components'
 const AdminMediaForm: React.FC<ResourceFormProps> = (props) => {
 	const { open, handleClose, handleReload } = props || {}
 
-	const [tab, setTab] = useState(0)
-	const handleChange = (newValue: number) => {
+	const [tab, setTab] = useState('upload')
+	const handleChange = (newValue: string) => {
 		setTab(newValue)
 	}
 
@@ -28,15 +28,15 @@ const AdminMediaForm: React.FC<ResourceFormProps> = (props) => {
 				<ButtonTabs
 					fullWidth
 					options={[
-						{ label: 'Upload', value: 0 },
-						{ label: 'Unsplash', value: 1 },
+						{ label: 'Upload', value: 'upload' },
+						{ label: 'Unsplash', value: 'unsplash' },
 					]}
 					value={tab}
 					handleChange={handleChange}
 				/>
 			</div>
-			{tab == 0 && <MediaUploader onComplete={handleComplete} />}
-			{tab == 1 && <UnsplashList onComplete={handleComplete} />}
+			{tab == 'upload' && <MediaUploader onComplete={handleComplete} />}
+			{tab == 'unsplash' && <UnsplashList onComplete={handleComplete} />}
 		</Drawer>
 	)
 }

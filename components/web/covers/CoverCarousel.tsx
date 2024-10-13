@@ -7,7 +7,7 @@ export type CoverCarouselProps = {
 	items: {
 		title?: string
 		description?: string
-		image?: string
+		image: string
 		buttonText?: string
 		url?: string
 	}[]
@@ -18,7 +18,6 @@ export type CoverCarouselProps = {
 	enableGradient?: boolean
 	enableBorder?: boolean
 	enableArrows?: boolean
-	overlayColor?: string
 	opacity?: number
 	alignItems?: 'flex-start' | 'center' | 'flex-end'
 }
@@ -34,7 +33,6 @@ const CoverCarousel: React.FC<CoverCarouselProps> = (props) => {
 		enableGradient = false,
 		enableArrows = false,
 		enableAutoPlay = false,
-		overlayColor = '#000000',
 		alignItems = 'center',
 	} = props
 
@@ -65,7 +63,6 @@ const CoverCarousel: React.FC<CoverCarouselProps> = (props) => {
 						enableGradient={enableGradient}
 						opacity={opacity}
 						handleClick={() => handleClick(item)}
-						overlayColor={overlayColor}
 						alignItems={alignItems}
 					/>
 				))}

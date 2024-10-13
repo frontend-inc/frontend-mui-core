@@ -95,7 +95,6 @@ export default function DateInput({
 						mode="single"
 						selected={date}
 						onSelect={handleDateSelect}
-						initialFocus
 					/>
 				</PopoverContent>
 			</Popover>

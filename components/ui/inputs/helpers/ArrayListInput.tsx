@@ -32,7 +32,7 @@ const ArrayItemInput: React.FC<ArrayItemInputProps> = (props) => {
 				handleChange={handleInputChange}
 			/>
 			<div>
-				<IconButton size="small" onClick={() => handleRemove(index)}>
+				<IconButton onClick={() => handleRemove(index)}>
 					<X />
 				</IconButton>
 			</div>

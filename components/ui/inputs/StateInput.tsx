@@ -12,6 +12,7 @@ const StateInput: React.FC<SelectInputPropsType> = (props) => {
 			label={label}
 			errors={errors}
 			value={value}
+      //@ts-ignore
 			options={STATES}
 			handleChange={handleChange}
 		/>

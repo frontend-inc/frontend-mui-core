@@ -4,12 +4,12 @@ import React from 'react'
 import { FilterIcon, Search } from 'lucide-react'
 import { SyntheticEventType } from '../../../../types'
 import TableFilterForm from './TableFilterForm'
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../../shadcn/ui/button'
 import {
 	Popover,
 	PopoverContent,
 	PopoverTrigger,
-} from '@/components/ui/popover'
+} from '../../../../shadcn/ui/popover'
 
 type FilterMenuProps = {
 	loading: boolean

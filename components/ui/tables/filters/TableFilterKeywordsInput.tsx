@@ -1,12 +1,12 @@
 import React from 'react'
 import { SearchInput } from '../../..'
-import { Typography } from '../../../../tailwind'
+import { SyntheticEventType } from '../../../../types'
 
 type FilterKeywordProps = {
 	label?: string
 	handleSearch: () => void
-	handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-	value?: string
+	handleChange: (e: SyntheticEventType) => void
+	value: string
 }
 
 const FilterKeywordsInput: React.FC<FilterKeywordProps> = ({

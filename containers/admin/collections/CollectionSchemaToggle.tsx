@@ -14,10 +14,10 @@ const CollectionSchemaToggle: React.FC<CollectionSchemaToggleProps> = (
 	const { app_id: appId, collection_id: collectionId } =
 		router?.query as RouterParams
 
-	const { tab = 0 } = props
+	const { tab = 'content' } = props
 
 	const handleClick = (value) => {
-		if (value == 0) {
+		if (value == 'content') {
 			router.push(`/dashboard/${appId}/collections/${collectionId}`)
 			return
 		} else {
@@ -29,8 +29,8 @@ const CollectionSchemaToggle: React.FC<CollectionSchemaToggleProps> = (
 	return (
 		<ButtonTabs
 			options={[
-				{ label: 'Content', value: 0, icon: 'Database' },
-				{ label: 'Fields', value: 1, icon: 'Type' },
+				{ label: 'Content', value: 'content', icon: 'Database' },
+				{ label: 'Fields', value: 'fields', icon: 'Type' },
 			]}
 			handleChange={handleClick}
 			value={tab}

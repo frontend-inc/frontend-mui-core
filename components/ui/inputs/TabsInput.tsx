@@ -11,9 +11,9 @@ type TabsInputProps = {
 	options: {
 		icon?: string
 		label?: string
-		value: number
+		value: string
 	}[]
-	value: number
+	value: string
 	info?: string
 }
 

@@ -22,7 +22,7 @@ const Profile: React.FC<ProfileProps> = (props) => {
 			<div className="w-full max-w-[600px] flex flex-col sm:flex-row items-start sm:space-x-4 space-y-4 sm:space-y-0">
 				<div className="flex flex-col items-center space-y-1">
 					<div className="h-[200px] w-[200px]">
-						<Image src={image} aspectRatio={1.0} />
+						<Image alt={title} src={image} aspectRatio={1.0} />
 					</div>
 					<div className="flex flex-row">
 						{socialLinks?.map((link, index) => (

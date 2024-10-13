@@ -61,7 +61,6 @@ const Cover: React.FC<CoverProps> = (props) => {
 					aspectRatio={2.5}
 					enableGradient={enableGradient}
 					enableOverlay={enableOverlay}
-					opacity={opacity}
 				/>
 			</div>
 			<div className="block sm:hidden">
@@ -72,7 +71,6 @@ const Cover: React.FC<CoverProps> = (props) => {
 					aspectRatio={1.0}
 					enableGradient={enableGradient}
 					enableOverlay={enableOverlay}
-					opacity={opacity}
 				/>
 			</div>
 			<div
