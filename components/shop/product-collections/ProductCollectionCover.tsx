@@ -12,7 +12,6 @@ export type ProductCollectionCoverProps = {
 	enableGradient?: boolean
 	enableOverlay?: boolean
 	opacity?: number
-	overlayColor?: string
 	href?: string
 }
 
@@ -28,7 +27,6 @@ const ProductCollectionCover: React.FC<ProductCollectionCoverProps> = (
 		enableOverlay = true,
 		opacity = 0.5,
 		alignItems = 'center',
-		overlayColor = '#000000',
 		href,
 	} = props
 
@@ -38,10 +36,10 @@ const ProductCollectionCover: React.FC<ProductCollectionCoverProps> = (
 			enableOverlay={enableOverlay}
 			enableGradient={enableGradient}
 			opacity={opacity}
-			overlayColor={overlayColor}
 			height={height}
 			title={productCollection?.title}
 			description={productCollection?.description}
+      //@ts-ignore 
 			image={productCollection?.image?.url}
 			alt={alt}
 			alignItems={alignItems}

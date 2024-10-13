@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import {
 	Drawer,
 	AuthGuard,
@@ -9,12 +9,13 @@ import {
 	TextInput,
 } from '../..'
 import { useResourceContext } from 'frontend-js'
+import { SyntheticEventType } from '../../../types'
 
 type ProductReviewFormProps = {
 	loading: boolean
 	errors?: any
 	review: any
-	handleChange: (ev: any) => void
+	handleChange: (ev: SyntheticEventType) => void
 	handleSubmit: () => void
 }
 
@@ -68,12 +69,14 @@ const ProductReviewForm: React.FC<ProductReviewFormProps> = () => {
 							errors={errors}
 							name="rating"
 							value={resource?.rating}
+              {/* @ts-ignore */}
 							handleChange={handleChange}
 						/>
 						<TextInput
 							errors={errors}
 							name="title"
 							value={resource?.title}
+              {/* @ts-ignore */}
 							handleChange={handleChange}
 							placeholder="Review summary..."
 						/>
@@ -81,6 +84,7 @@ const ProductReviewForm: React.FC<ProductReviewFormProps> = () => {
 							errors={errors}
 							name="body"
 							value={resource?.body}
+              {/* @ts-ignore */}
 							handleChange={handleChange}
 							placeholder="Leave a review..."
 						/>

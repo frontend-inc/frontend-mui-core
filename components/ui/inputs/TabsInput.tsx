@@ -56,7 +56,7 @@ export default function TabsInput({
 							className={cn('flex items-center text-sm')}
 						>
 							{option.icon && (
-								<span className={cn('inline-block', icon && 'mr-2')}>
+								<span className={'inline-block mr-2'}>
 									{option.icon}
 								</span>
 							)}

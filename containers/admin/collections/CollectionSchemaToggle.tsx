@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import { RouterParams } from '../../../types'
 
 type CollectionSchemaToggleProps = {
-	tab?: number
+	tab?: string
 }
 
 const CollectionSchemaToggle: React.FC<CollectionSchemaToggleProps> = (

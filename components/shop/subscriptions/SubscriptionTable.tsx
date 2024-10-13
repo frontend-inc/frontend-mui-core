@@ -15,7 +15,7 @@ export default function SubscriptionTable() {
 		findSubscriptions,
 	} = useSubscriptions()
 
-	const { currentUser, fetchMe } = useAuth()
+	const { currentUser } = useAuth()
 	const { setAuthOpen } = useApp()
 
 	const handleSubscribe = async (subscription: any) => {
@@ -24,8 +24,8 @@ export default function SubscriptionTable() {
 		let resp = await subscribe(subscription?.id, {
 			success_url: currentUrl,
 			cancel_url: currentUrl,
-		})
-		if (resp?.url) {
+		}) as any
+		if (resp?.url) {      
 			router.push(resp.url)
 		}
 	}

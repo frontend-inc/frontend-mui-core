@@ -31,6 +31,7 @@ const ShopifyOrderItem: React.FC<ShopifyOrderItemProps> = ({
 					<Image
 						alt={order?.name || 'Order image'}
 						src={
+              //@ts-ignore
 							order?.lineItems?.edges[0]?.node?.variant?.image?.url ||
 							'/placeholder.svg'
 						}

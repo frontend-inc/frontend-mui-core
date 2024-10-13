@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import { Image, InputLabel } from '../../../components'
 import MediaBrowser from './MediaBrowser'
 import { Search, X } from 'lucide-react'

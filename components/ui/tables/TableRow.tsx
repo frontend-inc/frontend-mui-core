@@ -43,6 +43,7 @@ const TableRow: React.FC<TableRowProps> = (props) => {
 				<TableCell small align={'center'} sticky>
 					<div className="mx-2">
 						<Checkbox
+              name={`select-${row.id}`}
 							value={selected}
               //@ts-ignore 
 							handleChange={handleSelect ? () => handleSelect(row) : undefined}

@@ -89,7 +89,7 @@ export default function ShareButton({
 								<SocialIcon
 									key={index}
 									provider={provider.value}
-									onClick={() => handleShareClick(provider.value)}
+									handleClick={() => handleShareClick(provider.value)}
 									size={36}
 								/>
 							))}

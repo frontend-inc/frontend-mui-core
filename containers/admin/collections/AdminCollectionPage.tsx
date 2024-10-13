@@ -117,7 +117,7 @@ const AdminCollectionPage: React.FC = () => {
 							</div>
 						)
 					}
-					secondaryActions={<CollectionSchemaToggle tab={'content'} />}
+					secondaryActions={<CollectionSchemaToggle tab='content' />}
 				/>
 				{collectionId ? (
 					<AdminCollectionTable

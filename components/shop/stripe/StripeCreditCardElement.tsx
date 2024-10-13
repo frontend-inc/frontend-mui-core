@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { useAlerts } from '../../../hooks'
 import { Icon } from '../..'

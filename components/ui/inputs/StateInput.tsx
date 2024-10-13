@@ -10,7 +10,6 @@ const StateInput: React.FC<SelectInputPropsType> = (props) => {
 		<Autosuggest
 			name={name}
 			label={label}
-			errors={errors}
 			value={value}
       //@ts-ignore
 			options={STATES}

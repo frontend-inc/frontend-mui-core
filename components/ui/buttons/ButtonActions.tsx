@@ -35,12 +35,10 @@ const ButtonActions: React.FC<ButtonActionsProps> = ({
 					{buttons.map((button, index) => (
 						<ButtonAction
 							key={index}
-							color={button?.color || color}
 							icon={button?.icon}
 							path={button?.path}
 							url={button?.url}
-							size={size}
-							variant={button?.variant || 'default'}
+							size={size}							
 						>
 							{button?.label}
 						</ButtonAction>

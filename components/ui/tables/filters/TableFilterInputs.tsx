@@ -1,10 +1,11 @@
 import React from 'react'
 import TableFilterInput from './TableFilterInput'
+import { SyntheticEventType } from '../../../../types'
 
 type FilterInputProps = {
 	filters: any[]
 	fieldOptions: any[]
-	handleChange: (e: React.ChangeEvent<HTMLInputElement>, index: number) => void
+	handleChange: (e: SyntheticEventType, index: number) => void
 	handleRemove: (index: number) => void
 }
 

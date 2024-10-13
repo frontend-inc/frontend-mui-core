@@ -123,7 +123,6 @@ const RemoteAutosuggest: React.FC<RemoteAutosuggestProps> = (props) => {
 	if (!displayField) return null
 	return (
 		<Autosuggest
-			errors={errors}
 			loading={delayedLoading}
 			direction={direction}
 			label={label}

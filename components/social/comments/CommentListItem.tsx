@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Collapse, Typography } from '../../../tailwind'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import { UserAvatar } from '../../../components'
 import { useComments } from '../../../hooks'
 import moment from 'moment'

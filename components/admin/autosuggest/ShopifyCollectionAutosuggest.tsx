@@ -49,7 +49,6 @@ const CollectionAutosuggest: React.FC<AutosuggestProps> = (props) => {
 			value={value}
 			options={options}
 			placeholder={placeholder}
-			direction={direction}
 			handleChange={handleChange}
 			enableClear
 		/>

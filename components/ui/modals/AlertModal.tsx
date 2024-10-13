@@ -27,7 +27,6 @@ const AlertModal: React.FC<AlertModalProps> = ({
 	loading = false,
 	title = 'Please confirm or cancel this action.',
 	description = 'This action is not reversable.',
-	icon = 'CircleAlert',
 	open,
 	handleClose,
 	handleConfirm,

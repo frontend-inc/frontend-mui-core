@@ -6,7 +6,7 @@ import {
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from '@/shadcn/ui/dropdown-menu'
+} from '../../../shadcn/ui/dropdown-menu'
 import { MenuButton } from '../../../components'
 import { ShopifyAddressType } from 'frontend-shopify'
 
@@ -32,6 +32,7 @@ const ShopifyAddressItem: React.FC<ShopifyAddressItemProps> = (props) => {
 			<Button
 				variant="ghost"
 				className="flex-grow text-left justify-start rounded-lg"
+        //@ts-ignore 
 				onClick={() => handleClick(address?.id)}
 			>
 				<div>
@@ -57,6 +58,7 @@ const ShopifyAddressItem: React.FC<ShopifyAddressItemProps> = (props) => {
 						<MenuButton />
 					</DropdownMenuTrigger>
 					<DropdownMenuContent>
+            {/* @ts-ignore */}
 						<DropdownMenuItem onSelect={() => handleEdit(address?.id)}>
 							Edit
 						</DropdownMenuItem>

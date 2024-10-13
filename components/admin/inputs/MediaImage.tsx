@@ -1,11 +1,11 @@
 import React from 'react'
 import { Image, Icon } from '../../../components'
 import { ImageType } from '../../../types'
-import { Button } from '@/shadcn/ui/button'
-import { Card, CardContent } from '@/shadcn/ui/card'
+import { Button } from '../../../shadcn/ui/button'
+import { Card, CardContent } from '../../../shadcn/ui/card'
 
 type MediaImageProps = {
-	image?: ImageType
+	image: ImageType
 	objectFit?: 'cover' | 'contain'
 	handleRemove: () => void
 }

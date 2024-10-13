@@ -63,12 +63,10 @@ const FilterFieldWrapper: React.FC<FilterFieldProps> = ({
 			<div className="flex flex-row justify-start items-start">
 				<div>
 					<TabsInput
-						direction="column"
 						name="where"
             //@ts-ignore
 						options={WHERE_OPTIONS}
-						placeholder="where"
-						value={filter?.where || 'AND'}
+            value={filter?.where || 'AND'}
 						handleChange={(ev) => handleChange(ev, index)}
 					/>
 					<div className="flex flex-col space-y-2">

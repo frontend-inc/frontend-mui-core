@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@/shadcn/ui/button'
+import { Button } from '../../../shadcn/ui/button'
 import { IconLoading, SwitchInput, TextInput } from '../..'
 import { ShopifyCustomerType } from 'frontend-shopify'
 

@@ -69,8 +69,7 @@ const MediaBrowser: React.FC<MediaBrowserProps> = ({
 	return (
 		<Modal
 			mode="editor"
-			maxWidth="md"
-			disablePadding
+			maxWidth="md"			
 			open={open}
 			handleClose={handleClose}
 			title={'Browse Media'}

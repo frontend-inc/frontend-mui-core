@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useResource, useResourceContext } from 'frontend-js'
 import { Button } from '../../../shadcn/ui/button'
 import { Modal } from '../../../components'
-import { PlaylistAdd } from 'lucide-react'
+import { Plus } from 'lucide-react'
 import { RemoteAutosuggest } from '../../../components'
 import { useAuth } from 'frontend-js'
 import { useApp } from '../../../hooks'
@@ -52,8 +52,7 @@ const AddToList: React.FC<AddToListProps> = (props) => {
 	return (
 		<>
 			<Button
-				variant="ghost"
-				size={size}
+				variant="ghost"				
 				onClick={handleClick}
 				className={cn(
 					'p-2',
@@ -63,7 +62,7 @@ const AddToList: React.FC<AddToListProps> = (props) => {
 					className
 				)}
 			>
-				<PlaylistAdd className="h-4 w-4" />
+				<Plus className="h-4 w-4" />
 			</Button>
 			<Modal
 				title="Add to List"
@@ -72,7 +71,7 @@ const AddToList: React.FC<AddToListProps> = (props) => {
 				handleClose={handleClose}
 				buttons={
 					<Button className="w-full" onClick={handleSubmit} variant="default">
-						<PlaylistAdd className="mr-2 h-5 w-5 text-foreground" />
+						<Plus className="mr-2 h-5 w-5 text-foreground" />
 						Add to List
 					</Button>
 				}
@@ -82,6 +81,7 @@ const AddToList: React.FC<AddToListProps> = (props) => {
 					name="id"
 					displayField="title"
 					value={resource?.id}
+          //@ts-ignore
 					handleChange={handleChange}
 					defaultQuery={{
 						current_user: true,
