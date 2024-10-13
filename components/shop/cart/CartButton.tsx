@@ -11,14 +11,12 @@ type CartIconButtonProps = {
 	handleClick: () => void
 }
 
-type CartButtonProps = {
-	label?: string
-	variant?: 'icon' | 'button'
+type CartButtonProps = {	
 	icon?: string
 }
 
 const CartButton: React.FC<CartButtonProps> = (props) => {
-	const { variant = 'icon', label, icon = 'ShoppingBag' } = props
+	const { icon = 'ShoppingBag' } = props
 
 	const [loaded, setLoaded] = useState(false)
 	const [debouncedLoaded] = useDebounce(loaded, 1000)

@@ -38,8 +38,8 @@ const MobileDrawer = (props: MobileDrawerProps) => {
 				</List>
 				{(enableAuth || enableShopify) && (
 					<Stack direction="column" spacing={1}>
-						{enableStripe && <CartButton variant="button" />}
-						{enableShopify && <ShopifyCartButton variant="button" />}
+						{enableStripe && <CartButton />}
+						{enableShopify && <ShopifyCartButton />}
 						{enableAuth && (
 							<div className="w-full border-t border-divider pt-1.5">
 								<AuthButton showLabel />
