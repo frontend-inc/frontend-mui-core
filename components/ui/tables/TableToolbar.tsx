@@ -11,6 +11,7 @@ import {
 } from '../../../shadcn/ui/popover'
 import { ListFilter } from 'lucide-react'
 import TableFilterForm from './filters/TableFilterForm'
+import TableFilterButton from './filters/TableFilterButton'
 
 type TableToolbarProps = {
 	loading: boolean
@@ -56,8 +57,6 @@ const TableToolbar: React.FC<TableToolbarProps> = (props) => {
 		handleClearFilters,
 	} = props
 
-	const [isOpen, setIsOpen] = useState(false)
-
 	const [badgeCount, setBadgeCount] = useState(0)
 
 	useEffect(() => {
@@ -78,33 +77,17 @@ const TableToolbar: React.FC<TableToolbarProps> = (props) => {
 						handleSearch={handleKeywordSearch}
 					/>
 				</div>
-				<Hidden mdDown>
 					<div className="relative flex flex-row justify-start items-center">
-						<Popover open={isOpen} onOpenChange={setIsOpen}>
-							{badgeCount > 0 && (
-								<Badge className="absolute -top-2 -right-2 z-10">
-									{badgeCount}
-								</Badge>
-							)}
-							<PopoverTrigger asChild>
-								<Button className="text-primary-foreground" color="secondary">
-									<ListFilter className="mr-2 h-4 w-4" />
-									Filter
-								</Button>
-							</PopoverTrigger>
-							<PopoverContent className="w-[400px]">
-								<TableFilterForm
-									loading={loading}
-									query={query}
-									fields={fields}
-									handleSearch={handleSearch}
-									handleChange={handleChange}
-									handleClearFilters={handleClearFilters}
-								/>
-							</PopoverContent>
-						</Popover>
-					</div>
-				</Hidden>
+            <TableFilterButton 
+              badgeCount={badgeCount}
+              loading={loading}
+              query={query}
+              fields={fields}
+              handleChange={handleChange}
+              handleSearch={handleSearch}
+              handleClear={handleClearFilters}
+            />
+					</div>				
 			</div>
 			<div className="w-60 flex flex-row justify-end items-center">
 				<div className="flex flex-row justify-start items-center">

@@ -42,7 +42,7 @@ export default function CellHeader({
 						sortDirection === 'desc' && 'rotate-180'
 					)}
 				>
-					<ChevronUp className="h-5 w-5 text-primary" />
+					<ChevronUp className="h-5 w-5 text-muted-foreground" />
 				</span>
 			)}
 		</Button>
