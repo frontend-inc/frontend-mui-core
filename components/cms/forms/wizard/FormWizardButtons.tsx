@@ -25,7 +25,7 @@ export default function FormWizardButtons({
 	handleSubmit,
 }: FormWizardButtonsProps) {
 	return (
-		<div className="fixed bottom-0 left-0 w-full py-2 px-2 flex justify-center space-x-4 border-t-2 border-border bg-background">
+		<div className="bg-background fixed bottom-0 left-0 w-full py-2 px-2 flex justify-center space-x-4 border-t-2 border-border">
 			<Button
 				size="lg"
 				variant="outline"

@@ -8,6 +8,8 @@ import { AttachmentInputProps } from '../../../types'
 import { cn } from '../../../shadcn/lib/utils'
 import { Button } from '../../../shadcn/ui/button'
 import { Avatar, AvatarFallback } from '../../../shadcn/ui/avatar'
+import { CloudUpload } from 'lucide-react'
+import { DropZone } from '../../../components'
 
 const IMAGE_WIDTH = 140
 
@@ -129,25 +131,9 @@ export default function AttachmentInput({
 				/>
 			)}
 			{!attachment?.url && !src && (
-				<div className="border-2 border-dashed border-border rounded-lg p-6 text-center">
-					<input
-						type="file"
-						className="hidden"
-						onChange={(e) => {
-							const file = e.target.files?.[0]
-							if (file) {
-								onDrop(file, { src: URL.createObjectURL(file) })
-							}
-						}}
-						id={`dropzone-${name}`}
-					/>
-					<label
-						htmlFor={`dropzone-${name}`}
-						className="cursor-pointer font-semibold text-foreground hover:text-foreground-dark"
-					>
-						{placeholder}
-					</label>
-				</div>
+        <DropZone 
+          onDrop={onDrop}          
+        />				
 			)}
 		</div>
 	)

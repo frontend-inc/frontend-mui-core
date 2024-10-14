@@ -50,7 +50,7 @@ const DropZone: React.FC<DropZoneProps> = ({
 	return (
 		<div
 			{...getRootProps()}
-			className="m-px p-4 flex flex-col justify-center items-center rounded border-2 border-border bg-background text-center hover:border-2 hover:border-primary hover:cursor-pointer transition-all duration-300"
+			className=" bg-background m-px p-4 flex flex-col justify-center items-center rounded border-2 border-border text-center hover:border-2 hover:border-primary hover:cursor-pointer transition-all duration-300"
 		>
 			<input {...getInputProps()} />
 			{loading ? (
@@ -58,9 +58,9 @@ const DropZone: React.FC<DropZoneProps> = ({
 			) : (
 				<>
 					{isDragActive ? (
-						<DownloadCloud className="text-foreground w-8 h-8" />
+						<DownloadCloud className="text-foreground w-5 h-5" />
 					) : (
-						<UploadCloud className="text-foreground w-8 h-8" />
+						<UploadCloud className="text-foreground w-5 h-5" />
 					)}
 					<p className="mt-2 text-sm text-foreground">
 						{isDragActive ? dropLabel : label}

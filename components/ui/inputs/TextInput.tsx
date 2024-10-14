@@ -69,8 +69,8 @@ export default function TextInput({
 			<InputLabel label={label} info={info} />
 			<div className="relative w-full">
 				<Input
-					className={cn(
-						'w-full text-foreground',
+					className={cn(            
+						'w-full text-foreground bg-background',
 						error && 'border-destructive',
 						className
 					)}
