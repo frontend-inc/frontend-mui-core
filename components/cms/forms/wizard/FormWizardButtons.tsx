@@ -28,9 +28,9 @@ export default function FormWizardButtons({
 		<div className="bg-background fixed bottom-0 left-0 w-full py-2 px-2 flex justify-center space-x-4 border-t-2 border-border">
 			<Button
 				size="lg"
-				variant="outline"
+				variant="secondary"
 				onClick={handlePrevStep}
-				className={cn('w-full sm:w-[260px]', 'text-secondary-foreground')}
+				className={'w-full sm:w-[260px]'}
 			>
 				<ChevronLeft className="mr-2 h-4 w-4" />
 				Prev

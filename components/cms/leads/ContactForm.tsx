@@ -47,6 +47,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
 			...contact,
 			source: 'contact',
 		})
+    showAlertSuccess('Thank you for contacting us!')
 		if (resp?.id) {
 			setContact({})
 			showAlertSuccess('Thank you for contacting us!')
