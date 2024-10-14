@@ -123,7 +123,7 @@ const UnsplashModal: React.FC<UnsplashViewerModalProps> = ({
 										{image?.user?.name}
 									</a>
 									<Typography variant="body2" className="text-gray-500 w-full">
-										{image.description}
+										{image?.description}
 									</Typography>
 								</div>
 							</div>
