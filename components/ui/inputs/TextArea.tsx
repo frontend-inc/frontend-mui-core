@@ -70,7 +70,7 @@ export default function TextArea({
 			<div className="relative w-full">
 				<Textarea
 					className={cn(
-						'w-full text-foreground resize-none min-w-[230px]',
+						'bg-background w-full text-foreground resize-none min-w-[230px]',
 						error && 'border-red-500'
 					)}
 					name={name}
