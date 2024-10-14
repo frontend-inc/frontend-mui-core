@@ -112,7 +112,7 @@ const CartLineItem: React.FC<CartLineItemProps> = (props) => {
 				</div>
 				<div className="flex flex-col space-y-2">
 					<Typography variant="body1">{product?.title}</Typography>
-					<Typography color="text.secondary" variant="body2">
+					<Typography className="text-muted-foreground"variant="body2">
 						{product?.display_price}
 					</Typography>
 					<CartQuantityInput

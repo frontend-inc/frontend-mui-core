@@ -96,7 +96,7 @@ export default function ResourceListItem({
 				<div className="flex-grow cursor-pointer" onClick={handleClick}>
 					<Typography variant="body1">{primary}</Typography>
 					{secondary && (
-						<Typography variant="body2" color="text.secondary">
+						<Typography variant="body2" className="text-muted-foreground">
 							{secondary}
 						</Typography>
 					)}

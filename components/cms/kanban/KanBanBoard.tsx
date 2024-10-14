@@ -95,7 +95,7 @@ const KanBanBoard: React.FC<KanBanBoardProps> = (props) => {
 						className="flex flex-col space-y-1 justify-between p-1 w-[280px] min-w-[280px] overflow-x-hidden rounded shadow-md hover:shadow-lg transition-shadow duration-200"
 					>
 						<div>
-							<Typography variant="subtitle2" color="text.primary">
+							<Typography variant="subtitle2" >
 								{header.label}
 							</Typography>
 							<SortableContext

@@ -21,10 +21,10 @@ const Feature: React.FC<FeatureProps> = (props) => {
 				</Avatar>
 			)}
 			<Stack direction="column" spacing={1} alignItems="center">
-				<Typography color="text.primary" variant="subtitle1">
+				<Typography variant="subtitle1">
 					{title}
 				</Typography>
-				<Typography color="text.secondary" variant="body1">
+				<Typography className="text-muted-foreground"variant="body1">
 					{description}
 				</Typography>
 			</Stack>

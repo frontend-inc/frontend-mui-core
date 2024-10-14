@@ -24,7 +24,7 @@ const UserListItem: React.FC<UserListItemProps> = (props) => {
 		<ResourceListItem
 			handleClick={handleClick}
 			primary={
-				<Typography variant="subtitle2" color="text.primary">
+				<Typography variant="subtitle2" >
 					{user?.name}
 				</Typography>
 			}

@@ -22,14 +22,14 @@ const TestimonialCard: React.FC<TestimonialProps> = (props) => {
 					{text && (
 						<ExpandableText
 							variant="subtitle1"
-							color="text.secondary"
+							className="text-muted-foreground"
 							text={`"${text}"`}
 						/>
 					)}
 				</div>
 				<Stack direction="row" spacing={2}>
 					<Avatar src={image} />
-					<Typography variant="body2" color="text.secondary">
+					<Typography variant="body2" className="text-muted-foreground">
 						&mdash; {author}
 					</Typography>
 				</Stack>

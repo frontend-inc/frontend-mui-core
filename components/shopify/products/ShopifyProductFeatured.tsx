@@ -69,17 +69,17 @@ const ShopifyProductFeatured: React.FC<ShopifyProductFeaturedProps> = ({
 				</div>
 				<Stack spacing={2} className="justify-center items-start h-full">
 					<div>
-						<Typography color="text.primary" variant="h3">
+						<Typography variant="h3">
 							{product?.title}
 						</Typography>
 						<Typography
-							color="text.secondary"
+							className="text-muted-foreground"
 							variant="body2"
 							className="max-w-[320px]"
 						>
 							{truncate(product?.description, 60)}
 						</Typography>
-						<Typography color="text.secondary" variant="body2">
+						<Typography className="text-muted-foreground"variant="body2">
 							{formatCurrency(product?.priceRange?.minVariantPrice?.amount)}
 						</Typography>
 					</div>

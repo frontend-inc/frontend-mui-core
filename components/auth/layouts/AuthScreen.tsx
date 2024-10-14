@@ -26,7 +26,7 @@ export default function AuthScreen({
 						{subtitle && (
 							<Typography
 								variant="body2"
-								color="text.secondary"
+								className="text-muted-foreground"
 								className="text-center"
 							>
 								{subtitle}

@@ -61,12 +61,12 @@ const PDP: React.FC<PDPProps> = (props) => {
 					<div className="w-full md:w-1/2 flex flex-col space-y-3">
 						<Typography variant="h3">{primary}</Typography>
 						<div className="flex flex-row space-x-2">
-							<Typography color="text.primary" variant="h6">
+							<Typography variant="h6">
 								{price}
 							</Typography>
 							{compareAtPrice && (
 								<Typography
-									color="text.secondary"
+									className="text-muted-foreground"
 									variant="subtitle2"
 									className="line-through"
 								>

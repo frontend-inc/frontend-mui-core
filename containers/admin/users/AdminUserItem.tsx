@@ -22,7 +22,7 @@ const AdminUserItem: React.FC<ResourceItemProps> = (props) => {
 			selectable={selectable}
 			selected={selected}
 			primary={
-				<Typography variant="body1" color="text.primary">
+				<Typography variant="body1" >
 					{user?.name} <Label label={user.role} />
 				</Typography>
 			}

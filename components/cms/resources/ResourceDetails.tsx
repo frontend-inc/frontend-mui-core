@@ -40,11 +40,11 @@ const ResourceDetails: React.FC<ResourceDetailsProps> = (props) => {
 				</div>
 			)}
 			{avatar && avatar}
-			<Typography variant="h5" color="text.primary">
+			<Typography variant="h5" >
 				{primary}
 			</Typography>
 			{secondary && (
-				<Typography variant="body2" color="text.secondary">
+				<Typography variant="body2" className="text-muted-foreground">
 					{secondary}
 				</Typography>
 			)}

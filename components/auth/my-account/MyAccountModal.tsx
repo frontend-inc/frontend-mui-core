@@ -76,7 +76,7 @@ const MyAccountModal: React.FC<MyAccountModalProps> = (props) => {
 						color="secondary"
 						variant="contained"
 						startIcon={
-							<Icon name="ChevronLeft" color="text.primary" size={24} />
+							<Icon name="ChevronLeft" size={24} />
 						}
 						onClick={() => setCurrentTab(null)}
 					>

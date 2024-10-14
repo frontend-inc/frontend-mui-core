@@ -26,10 +26,10 @@ const AdminQuestionDetails: React.FC<AdminQuestionProps> = (props) => {
 						/>
 					</div>
 					<div className="flex flex-col">
-						<Typography variant="subtitle1" color="text.primary">
+						<Typography variant="subtitle1" >
 							{question?.title}
 						</Typography>
-						<Typography variant="body2" color="text.secondary">
+						<Typography variant="body2" className="text-muted-foreground">
 							{question?.description}
 						</Typography>
 					</div>

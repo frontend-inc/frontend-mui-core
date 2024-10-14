@@ -29,7 +29,7 @@ const SpotlightCard: React.FC<SpotlightListProps> = (props) => {
 							</div>
 						)}
 						<Typography
-							color="text.primary"
+							
 							variant="h2"
 							className="md:text-left xs:text-center"
 						>

@@ -40,14 +40,14 @@ const UserProfile: React.FC<UserProfileProps> = (props) => {
 				<div className="flex flex-col space-y-1">
 					<Typography
 						variant="caption"
-						color="text.secondary"
+						className="text-muted-foreground"
 						className="w-full flex justify-center sm:justify-start"
 					>
 						@{username}
 					</Typography>
 					<Typography
 						variant="h6"
-						color="text.primary"
+						
 						className="w-full min-w-[200px] text-center sm:text-left"
 					>
 						{name}
@@ -55,7 +55,7 @@ const UserProfile: React.FC<UserProfileProps> = (props) => {
 					<div className="flex flex-col space-y-1">
 						<DisplayFields resource={user} fields={displayFields} />
 						{about_me && (
-							<ExpandableText text={about_me} color="text.secondary" />
+							<ExpandableText text={about_me} className="text-muted-foreground"/>
 						)}
 					</div>
 				</div>

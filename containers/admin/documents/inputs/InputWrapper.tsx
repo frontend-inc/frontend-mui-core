@@ -52,7 +52,7 @@ const DocumentInputWrapper: React.FC<DocumentInputWrapperProps> = (props) => {
 				)}
 			>
 				<div className="flex flex-row justify-between items-center">
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						{title}
 					</Typography>
 					<Label label={label} />

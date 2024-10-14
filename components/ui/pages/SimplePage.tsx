@@ -25,7 +25,7 @@ const SimplePage: React.FC<SimplePageProps> = ({
 			}`}
 		>
 			<div className="w-full max-w-3xl space-y-4">
-				<Typography variant="h2" color="text.primary" className="text-center">
+				<Typography variant="h2" className="text-foreground text-center">
 					{title}
 				</Typography>
 				<Typography variant="caption" className="block text-center">
@@ -34,7 +34,7 @@ const SimplePage: React.FC<SimplePageProps> = ({
 				{html ? (
 					<Typography
 						variant="body1"
-						color="text.primary"
+						
 						className="whitespace-pre-line"
 					>
 						<div dangerouslySetInnerHTML={{ __html: body }} />
@@ -42,7 +42,7 @@ const SimplePage: React.FC<SimplePageProps> = ({
 				) : (
 					<Typography
 						variant="body1"
-						color="text.primary"
+						
 						className="whitespace-pre-line"
 					>
 						{body}

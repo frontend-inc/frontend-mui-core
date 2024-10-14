@@ -40,7 +40,7 @@ const AdminDocumentRightPanel: React.FC<AdminDocumentRightPanelProps> = (
 	return (
 		<div className="bg-background h-full p-3 flex flex-col space-y-6">
 			<div className="flex flex-col space-y-3">
-				<Typography variant="caption" color="text.secondary">
+				<Typography variant="caption" className="text-muted-foreground">
 					Publish
 				</Typography>
 				<PublishButton
@@ -50,7 +50,7 @@ const AdminDocumentRightPanel: React.FC<AdminDocumentRightPanelProps> = (
 				/>
 			</div>
 			<div className="flex flex-col space-y-3">
-				<Typography variant="caption" color="text.secondary">
+				<Typography variant="caption" className="text-muted-foreground">
 					Last saved {document?.last_saved_at}
 				</Typography>
 				<SaveButton

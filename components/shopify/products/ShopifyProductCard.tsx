@@ -70,11 +70,11 @@ export default function ShopifyProductCard({
 			/>
 			<CardContent>
 				<div className="flex flex-col py-1">
-					<Typography color="text.primary" variant="subtitle2">
+					<Typography variant="subtitle2">
 						{truncate(product?.title)}
 					</Typography>
 					{enableOkendoStarRating && <OkendoStarRating product={product} />}
-					<Typography color="text.secondary" variant="body2">
+					<Typography className="text-muted-foreground"variant="body2">
 						{formatCurrency(product?.priceRange?.minVariantPrice?.amount)}
 					</Typography>
 				</div>

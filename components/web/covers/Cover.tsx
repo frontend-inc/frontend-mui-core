@@ -101,8 +101,7 @@ const Cover: React.FC<CoverProps> = (props) => {
 					)}
 					{description && (
 						<Typography
-							variant="subtitle2"
-							color="text.primary"
+							variant="subtitle2"							
 							textAlign={alignItems === 'center' ? 'center' : 'left'}
 						>
 							{description}

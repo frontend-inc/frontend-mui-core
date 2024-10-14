@@ -56,7 +56,7 @@ const AdminForm: React.FC<AdminFormProps> = (props) => {
 	return (
 		<div className="flex flex-col space-y-3">
 			<AdminFormDetails form={form} handleEdit={handleEdit} />
-			<Typography variant="subtitle1" color="text.primary">
+			<Typography variant="subtitle1" >
 				Questions
 			</Typography>
 			<AdminFormQuestionList formId={form?.id} />

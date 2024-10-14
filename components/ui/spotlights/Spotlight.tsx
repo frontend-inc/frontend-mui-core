@@ -41,7 +41,7 @@ const Spotlight: React.FC<SpotlightProps> = (props) => {
 			primary={title}
 			secondary={
 				description && (
-					<Typography variant="subtitle1" color="text.secondary">
+					<Typography variant="subtitle1" className="text-muted-foreground">
 						{description}
 					</Typography>
 				)

@@ -48,10 +48,10 @@ const AdminQuestionShow: React.FC<AdminQuestionShowProps> = (props) => {
 			/>
 			<div className="flex flex-col space-y-3">
 				<div className="w-full h-[1px] border-top-1 border-border" />
-				<Typography variant="subtitle1" color="text.primary">
+				<Typography variant="subtitle1" >
 					Answer Choices
 				</Typography>
-				<Typography variant="body2" color="text.secondary">
+				<Typography variant="body2" className="text-muted-foreground">
 					For single choice and multiple choice questions
 				</Typography>
 				<AdminAnswerList

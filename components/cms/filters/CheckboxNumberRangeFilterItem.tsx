@@ -51,7 +51,7 @@ const CheckboxNumberRangeFilterItem: React.FC<
 				<div className="mr-2">
 					<Checkbox checked={checked} onCheckedChange={handleClick} />
 				</div>
-				<Typography color="text.primary" variant="button">
+				<Typography variant="button">
 					{option.label}
 				</Typography>
 			</button>

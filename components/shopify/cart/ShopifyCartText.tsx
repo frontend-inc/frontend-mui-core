@@ -15,7 +15,7 @@ export default function ShopifyCartText({
 }: ShopifyCartTextProps) {
 	return (
 		<div className="flex flex-row justify-between w-full">
-			<Typography variant="body1" color="text.secondary">
+			<Typography variant="body1" className="text-muted-foreground">
 				{label}
 			</Typography>
 			<Typography variant="body1">{value}</Typography>

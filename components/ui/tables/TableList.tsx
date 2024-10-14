@@ -88,7 +88,7 @@ const TableList: React.FC<TableProps> = (props) => {
 			{(title || toolbar) && (
 				<div className="p-2 min-h-[40px] w-full">
 					{title && (
-						<Typography variant="subtitle1" color="text.primary">
+						<Typography variant="subtitle1" >
 							{title}
 						</Typography>
 					)}

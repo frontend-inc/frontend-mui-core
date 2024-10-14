@@ -39,7 +39,7 @@ export default function SidebarMenuItem({
 		<div
 			className={cn(
 				'flex items-center justify-between py-2 pl-4 px-2 hover:bg-muted rounded-md group',
-				selected && 'bg-foreground/10 text-foreground'
+				selected && 'bg-muted text-foreground'
 			)}
 		>
 			<button

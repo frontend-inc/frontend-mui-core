@@ -29,10 +29,10 @@ const AdminProductCollectionDetails: React.FC<
 						/>
 					</div>
 					<div className="flex flex-col">
-						<Typography variant="subtitle1" color="text.primary">
+						<Typography variant="subtitle1" >
 							{productCollection?.title}
 						</Typography>
-						<Typography variant="body2" color="text.secondary">
+						<Typography variant="body2" className="text-muted-foreground">
 							{productCollection?.description}
 						</Typography>
 					</div>

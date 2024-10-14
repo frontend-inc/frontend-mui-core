@@ -64,7 +64,7 @@ const AdminFieldItem: React.FC<AdminFieldItemProps> = (props) => {
 			avatar={<FieldIcon variant={field?.variant} />}
 			primary={
 				<div className="flex flex-row space-x-1">
-					<Typography variant="body1" color="text.primary">
+					<Typography variant="body1" >
 						{field?.label}
 					</Typography>
 					<Label label={field.variant} />

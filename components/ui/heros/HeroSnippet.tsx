@@ -59,7 +59,7 @@ export default function HeroSnippet({
 				)}
 				<div className="flex flex-col space-y-2 p-4 w-full">
 					{actions}
-					<Typography variant="subtitle1" color="text.primary">
+					<Typography variant="subtitle1" >
 						{primary}
 					</Typography>
 					{secondary}

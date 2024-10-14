@@ -83,10 +83,10 @@ const DataListItem: React.FC<DataListItemProps> = (props) => {
 				<div className="flex flex-row space-x-1 w-full">
 					<div className="flex flex-col justify-between items-start h-full w-full py-0 sm:py-1">
 						<div className="flex flex-col space-y-0.5">
-							<Typography color="text.primary" variant="subtitle2">
+							<Typography variant="subtitle2">
 								{primary}
 							</Typography>
-							<Typography color="text.secondary" variant="body2">
+							<Typography className="text-muted-foreground"variant="body2">
 								{secondary}
 							</Typography>
 						</div>

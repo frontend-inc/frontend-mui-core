@@ -40,7 +40,7 @@ const Hero: React.FC<HeroProps> = (props) => {
 		<Component
 			primary={title}
 			secondary={
-				<Typography variant="body1" color="text.secondary">
+				<Typography variant="body1" className="text-muted-foreground">
 					{description}
 				</Typography>
 			}

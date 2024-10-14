@@ -31,7 +31,7 @@ export default function ProductReviewItem({
 					<Typography variant="body1">{resource.body}</Typography>
 					<Typography
 						variant="body2"
-						color="text.secondary"
+						className="text-muted-foreground"
 						className="text-sm"
 					>
 						{`@${resource?.user?.username}`} reviewed{' '}

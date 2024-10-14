@@ -26,7 +26,7 @@ export const Statistic: React.FC<StatisticProps> = (props) => {
 					<Typography variant="subtitle1" className="font-bold tracking-tight">
 						{value}
 					</Typography>
-					<Typography variant="body2" color="text.secondary">
+					<Typography variant="body2" className="text-muted-foreground">
 						{label}
 					</Typography>
 				</div>

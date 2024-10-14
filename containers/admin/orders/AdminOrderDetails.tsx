@@ -31,7 +31,7 @@ const AdminOrderDetails: React.FC<AdminOrderDetailsProps> = (props) => {
 	return (
 		<div className={`grid grid-cols-2 gap-4 ${loading ? 'opacity-50' : ''}`}>
 			<div className="flex flex-row space-x-1">
-				<Typography variant="subtitle1" color="text.primary">
+				<Typography variant="subtitle1" >
 					Order {order.display_number}
 				</Typography>
 				<Label label={order?.status} />
@@ -55,7 +55,7 @@ const AdminOrderDetails: React.FC<AdminOrderDetailsProps> = (props) => {
 					</div>
 					<Typography
 						variant="overline"
-						color="text.secondary"
+						className="text-muted-foreground"
 						className="whitespace-pre-line"
 					>
 						{order.shipping_address}
@@ -64,19 +64,19 @@ const AdminOrderDetails: React.FC<AdminOrderDetailsProps> = (props) => {
 			</div>
 			<div className="bg-white p-4 rounded-lg shadow">
 				<div className="flex flex-col">
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						Subtotal: {order.display_subtotal}
 					</Typography>
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						Taxes: {order.total_amount}
 					</Typography>
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						Discounts: {order.discount_amount}
 					</Typography>
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						Shipping: {order.shipping_amount}
 					</Typography>
-					<Typography variant="overline" color="text.secondary">
+					<Typography variant="overline" className="text-muted-foreground">
 						Total: {order.display_total}
 					</Typography>
 				</div>

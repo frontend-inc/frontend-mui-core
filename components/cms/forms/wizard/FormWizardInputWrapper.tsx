@@ -20,10 +20,10 @@ const FormWizardInputWrapper: React.FC<FormWizardInputWrapperProps> = (
 		<Fade in={fadeIn}>
 			<div className="flex flex-col space-y-4">
 				<div className="p-1 flex flex-col space-y-2">
-					<Typography variant="h4" color="text.primary">
+					<Typography variant="h4" >
 						{title}
 					</Typography>
-					<Typography variant="body1" color="text.secondary">
+					<Typography variant="body1" className="text-muted-foreground">
 						{description}
 					</Typography>
 				</div>

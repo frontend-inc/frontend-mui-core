@@ -21,7 +21,7 @@ const CheckboxFilterItem: React.FC<CheckboxFilterItemProps> = (props) => {
 	return (
 		<li className="list-none">
 			<button
-				className="flex items-center w-full px-0 py-2 hover:bg-accent hover:text-accent-foreground"
+				className="flex p-1 items-center w-full"
 				onClick={handleClick}
 			>
 				<div className="mr-1">
@@ -30,7 +30,7 @@ const CheckboxFilterItem: React.FC<CheckboxFilterItemProps> = (props) => {
 						onCheckedChange={handleClick}
 					/>
 				</div>
-				<Typography color="text.primary" variant="button">
+				<Typography variant="button">
 					{option?.label}
 				</Typography>
 			</button>

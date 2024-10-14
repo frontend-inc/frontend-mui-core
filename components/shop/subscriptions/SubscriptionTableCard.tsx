@@ -41,7 +41,7 @@ export default function SubscriptionTableCard({
 						<Badge variant="secondary">{subscription.label}</Badge>
 					)}
 				</div>
-				<Typography color="text.secondary" variant="subtitle1">
+				<Typography className="text-muted-foreground"variant="subtitle1">
 					{subscription?.name}
 				</Typography>
 				<Typography variant="h4">{subscription.display_price}</Typography>

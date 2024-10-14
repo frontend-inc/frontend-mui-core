@@ -19,7 +19,7 @@ const AdminContactItem: React.FC<AdminContactItemProps> = (props) => {
 			primary={
 				<div className="flex flex-row space-x-1 items-center">
 					{contact?.name && (
-						<Typography variant="body1" color="text.primary">
+						<Typography variant="body1" >
 							{contact?.name}
 						</Typography>
 					)}

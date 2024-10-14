@@ -114,7 +114,7 @@ const AdminCollectionPage: React.FC = () => {
 									Add
 								</Button>
 								<IconButton onClick={() => setOpenAiModal(true)}>
-									<Icon name="Wand" color="text.primary" />
+									<Icon name="Wand" />
 								</IconButton>
 							</div>
 						)

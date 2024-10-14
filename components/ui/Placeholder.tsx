@@ -19,10 +19,10 @@ const Placeholder: React.FC<PlaceholderProps> = (props) => {
 	return (
 		<div className="w-full p-4 flex flex-col space-y-2 justify-center items-center">
 			{icon && <Icon name={icon} className={cn(color, 'w-5 h-5')} />}
-			<Typography variant="subtitle2" color="text.primary">
+			<Typography variant="subtitle2" >
 				{title}
 			</Typography>
-			<Typography variant="body2" color="text.secondary">
+			<Typography variant="body2" className="text-muted-foreground">
 				{description}
 			</Typography>
 			{buttons && (

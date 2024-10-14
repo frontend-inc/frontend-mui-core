@@ -24,7 +24,7 @@ const AdminReviewItem: React.FC<AdminReviewItemProps> = (props) => {
 		<ResourceListItem
 			primary={<FieldRating size="sm" value={review?.rating} />}
 			secondary={
-				<Typography variant="body2" color="text.secondary">
+				<Typography variant="body2" className="text-muted-foreground">
 					{truncate(review?.title, 40)}
 				</Typography>
 			}

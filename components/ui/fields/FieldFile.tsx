@@ -10,7 +10,7 @@ const FieldFile: React.FC<FieldElementProps> = (props) => {
 	return (
 		<FieldWrapper label={label} color={color} disableLabel={disableLabel}>
 			<Stack direction="row" spacing={1}>
-				<Icon name="File" color="text.primary" />
+				<Icon name="File" />
 				{value?.content_type && (
 					<Link href={value?.url || '#'}>{value?.content_type}</Link>
 				)}
